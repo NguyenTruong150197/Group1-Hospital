@@ -8,6 +8,9 @@
   background-color: #fff;
   font-family: Helvetica,sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .container{
   width: 1090px;
   height: 670px;
@@ -59,14 +62,43 @@ h2{
   height: 40px;
   text-align: center;
   padding-top: 12px;
+  margin-right: 10px;
   font-size: 16px;
   background-color: #4bbcd7;
 }
-
-
-a {
+.name{
+  font-weight: bold;
+  line-height: 2.8;
+}
+.intro-area{
+  margin-bottom: 25px;
+}
+.details h5{
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-style: italic;
+  color: #919191;
+}
+.email{
   text-decoration: none;
 }
+.email a{
+  color: #4bbcd7;
+}
+.details ul{
+  margin: 0;
+}
+.details ul li{
+  float: left;
+  list-style: none;
+  margin-right: 35px;
+}
+.details ul li a{
+  margin: ;
+}
+
+
+
 /*callout*/
 .bd-callout {
   height: 110px;
