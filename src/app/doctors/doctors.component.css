@@ -3,6 +3,7 @@
   padding: 0;
   float: left;
   width: 100%;
+  color: #808080;
   font-size: 14px;
   box-sizing: border-box;
   background-color: #fff;
@@ -13,7 +14,6 @@ a {
 }
 .container{
   width: 1090px;
-  height: 670px;
   margin: auto;
 }
 h2{
@@ -23,13 +23,14 @@ h2{
   font: 24px Lato;
   font-weight: bold;
   margin-bottom: 30px;
+  padding-top: 60px;
   box-sizing: border-box;
 }
 .items{
   width: 50%;
   float: left;
   display: block;
-  padding: 0 30px 50px 0;
+  padding: 0 30px 80px 0;
   text-align: left;
   font-weight: 400;
   line-height: 24px;
@@ -86,35 +87,125 @@ h2{
   color: #4bbcd7;
 }
 .details ul{
-  margin: 0;
+  float: left;
+  padding: 0;
 }
 .details ul li{
   float: left;
+  width: 36px;
+  height: 36px;
+  line-height: 2.3;
   list-style: none;
-  margin-right: 35px;
+  text-align: center;
+  margin-right: 12px;
+  border-radius: 50%;
+  border: 2px solid #cacaca;
+  background-color: #ffffff;
 }
 .details ul li a{
-  margin: ;
+  color: #808080;
+}
+.details ul li a:hover{
+  color: #ffffff;
+}
+.details ul li:hover{
+  color: #ffffff;
+  background-color: #4bbcd7 ;
 }
 
 
 
+
+/*.fa-twitter:hover{*/
+/*  color: #4bbcd7;*/
+/*}*/
+/*.fa-facebook{*/
+/*  color: #3b5998;*/
+/*}*/
+/*.fa-google{*/
+/*  color: #e50914;*/
+/*}*/
+/*.fa-linkedin{*/
+/*  color: #0077b5;*/
+/*}*/
+
+/*Bổ sung thêm hover của từng app ở đây nữa*/
+
+
+
+/*css table*/
+.table{
+  border: 1px solid #f4f4f4;
+  color: #808080;
+  box-sizing: border-box;
+}
+.table th{
+  padding: 18px 15px;
+}
+.table td{
+  color: #808080;
+  padding: 18px 15px 0;
+  line-height: 2;
+}
+.table td button{
+  margin-bottom: 15px;
+}
+.table a{
+  color: #4bbcd7;
+
+}
+.fa-user-md{
+  color: #4bbcd7;
+  word-spacing: 2px;
+}
+.table td i:hover{
+  text-decoration: underline;
+}
+.table button{
+  color: #4bbcd7;
+  border-color: #4bbcd7;
+}
+.table button:hover{
+  color: #fafafa;
+  text-decoration: underline;
+  background-color: #4bbcd7 ;
+}
+.physicians p{
+  padding: 20px 0 40px;
+}
 /*callout*/
 .bd-callout {
-  height: 110px;
+  position:relative;
+  float: left;
+  width: 1026.08px;
+  height: 119px;
   padding: 1.25rem;
+  box-sizing: border-box;
   font-weight: normal;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: 25px;
+  margin-bottom: 6rem;
   border: 1px solid #eee;
   border-left-width: .25rem;
-  border-radius: .25rem;
   background-color: #e3f4fb;
 }
-
+/*triangle*/
+.bd-callout:after {
+  content: "";
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 35px solid;
+  right: -35px;
+  width: 0;
+  height: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #e3f4fb;
+}
 .bd-callout h4 {
   margin-top: 0;
-  margin-bottom: .25rem
+  margin-bottom: .25rem;
 }
 
 .bd-callout p:last-child {
@@ -130,13 +221,41 @@ h2{
 .bd-callout+.bd-callout {
   margin-top: -.25rem
 }
-
 .bd-callout-info {
-  border-left-color: #4bbcd7
+  font-size: 16px;
+  color: #2d2d29;
+  line-height: 2.5;
+  font-weight: bold;
+  border-left-color: #4bbcd7;
 }
-
 .bd-callout-info h4 {
   color: #2D2D29;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: bold;
+  padding-top: 5px;
+}
+.bd-callout button{
+  float: right;
+  transform: translate(-20px,-15px);
+  color: #4bbcd7;
+  border-color: #4bbcd7;
+}
+.bd-callout button:hover{
+  color: #fafafa;
+  text-decoration: underline;
+  background-color: #4bbcd7 ;
+}
+/*hr*/
+.hr{
+  height: 10px;
+  background-image: linear-gradient(45deg,
+  hsla(0, 0%, 5%, 0),
+  hsla(0, 0%, 5%, 0) 33.33%,
+  hsl(0, 0%, 50%) 33.33%,
+  hsl(0, 0%, 50%) 66.67%,
+  hsla(0, 0%, 5%, 0) 66.67%,
+  hsla(0, 0%, 5%, 0) 100%);
+  background-size: 8px 100%;
+  width: 250px;
+  color: #808080;
 }
