@@ -3,17 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
-import {CentresComponent} from "./centres/centres.component";
 import {DoctorsComponent} from "./doctors/doctors.component";
+import {DepartmentsComponent} from "./departments/departments.component";
 
 const appRoutes: Routes=[
   {path:'',component: AppComponent},
-  {path:'centres',component: CentresComponent},
-  {path:'doctors',component: DoctorsComponent}
+  {path:'doctors',component: DoctorsComponent},
+  {path:'departments',component: DepartmentsComponent}
 ]
 @NgModule({
   declarations: [
-    AppComponent,CentresComponent,DoctorsComponent
+    AppComponent,DoctorsComponent,DepartmentsComponent
   ],
   imports: [
     BrowserModule,
