@@ -4,16 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import {DoctorsComponent} from "./doctors/doctors.component";
-import {DepartmentsComponent} from "./departments/departments.component";
+import {CentresComponent} from "./centres/centres.component";
 
 const appRoutes: Routes=[
   {path:'',component: AppComponent},
   {path:'doctors',component: DoctorsComponent},
-  {path:'departments',component: DepartmentsComponent}
+  {path:'centres',component: CentresComponent}
 ]
 @NgModule({
   declarations: [
-    AppComponent,DoctorsComponent,DepartmentsComponent
+    AppComponent,DoctorsComponent,CentresComponent
   ],
   imports: [
     BrowserModule,
