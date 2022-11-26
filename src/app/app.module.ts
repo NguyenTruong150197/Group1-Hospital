@@ -9,6 +9,12 @@ import {CentresComponent} from "./centres/centres.component";
 import {AboutusComponent} from "./aboutus/aboutus.component";
 import {FacilitiesComponent} from "./facilities/facilities.component";
 import {ServicesComponent} from "./services/services.component";
+import { HomeComponent } from './home/home.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { HelpdeskComponent } from './helpdesk/helpdesk.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes=[
   {path:'',component: AppComponent},
@@ -23,7 +29,13 @@ const appRoutes: Routes=[
 @NgModule({
   declarations: [
     AppComponent,DoctorsComponent,CentresComponent,ContactComponent,AboutusComponent,FacilitiesComponent,
-    ServicesComponent
+    ServicesComponent,
+    HomeComponent,
+    FeedbackComponent,
+    HelpdeskComponent,
+    RegistrationComponent,
+    SignUpComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
