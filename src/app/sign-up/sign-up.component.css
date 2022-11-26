@@ -1,0 +1,29 @@
+.modal-signin{
+  background-image: url(../../assets/images/banner/bn2.jpg);
+}
+.sign-up-button{
+  background-color: #3065b5;
+}
+.sign-up-button:hover{
+  background-color: #152858;
+}
+.twitter-sign-up:hover{
+  background-color: #3065b5;
+}
+.fb-sign-up{
+  color: #212529;
+}
+.fb-sign-up:hover{
+  background-color: #3065b5;
+  color: white;
+}
+.gmail-sign-up:hover{
+  background-color: #3065b5;
+  color: white;
+}
+.su i{
+  margin-right: 0.5rem;
+}
+.su a:hover{
+  color: white !important;
+}
