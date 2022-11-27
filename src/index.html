@@ -43,7 +43,7 @@
   <nav class="navbar navbar-expand-md navbar-dark" >
     <div class="container">
       <img class="navbar-brand" src="assets/images/logo.png" width="40px">
-      <a class="navbar-brand" href="#">Cambridge Hospital</a>
+      <a class="navbar-brand" routerLink="/home" href="#">Cambridge Hospital</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
               aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,8 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Department</a>
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               aria-expanded="false" routerLink="/centres">Department</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Cardiology</a></li>
               <li><a class="dropdown-item" href="#">Neurology</a></li>
@@ -67,7 +68,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Doctor</a>
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               aria-expanded="false" routerLink="/doctors">Doctor</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Cardiology</a></li>
               <li><a class="dropdown-item" href="#">Neurology</a></li>
@@ -79,7 +81,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               routerLink="/services" aria-expanded="false">Service</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Nephrologist Care</a></li>
               <li><a class="dropdown-item" href="#">Eye Care</a></li>
@@ -91,7 +94,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Facility</a>
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               routerLink="/facilities" aria-expanded="false">Facility</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Room</a></li>
               <li><a class="dropdown-item" href="#">Equipment</a></li>
@@ -99,24 +103,20 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+            <a class="nav-link active" aria-current="page" href="#" routerLink="/aboutus">About Us</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#"
                data-bs-toggle="dropdown" aria-expanded="false">More</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Contact Us</a></li>
-              <li><a class="dropdown-item" href="#">Appointment</a></li>
-              <li><a class="dropdown-item" href="#">Feedback</a></li>
-              <li><a class="dropdown-item" href="#">Helpdesk</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="">Appointment</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/feedback">Feedback</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/helpdesk">Helpdesk</a></li>
             </ul>
           </li>
 
         </ul>
-
-        <!--              <form role="search">-->
-        <!--                <input class="form-control" type="search" placeholder="Search" aria-label="Search">-->
-        <!--              </form>-->
         <form class="navbar-form navbar-left" action="#">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search">

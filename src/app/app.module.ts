@@ -39,7 +39,22 @@ const appRoutes: Routes=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)   // cost: appRoutes
+    RouterModule.forRoot(appRoutes),   // cost: appRoutes,
+    RouterModule.forRoot([
+      {path:'home',component: HomeComponent},
+      {path:'',component: HomeComponent},
+      {path:'signup',component: SignUpComponent},
+      {path:'registration',component: RegistrationComponent},
+      {path:'feedback',component: FeedbackComponent},
+      {path:'helpdesk',component: HelpdeskComponent},
+      {path:'**',component: PageNotFoundComponent},
+      {path:'doctors',component: DoctorsComponent},
+      {path:'centres',component: CentresComponent},
+      {path:'contact',component: ContactComponent},
+      {path:'aboutus',component: AboutusComponent},
+      {path:'facilities',component: FacilitiesComponent},
+      {path:'services',component: ServicesComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
