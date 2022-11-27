@@ -129,3 +129,6 @@ ul{
   scale: 1.1;
   transition: 300ms;
 }
+.btn:hover{
+  transition: none;
+}

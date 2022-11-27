@@ -17,13 +17,18 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes=[
-  {path:'',component: AppComponent},
+  {path:'',component: HomeComponent},
   {path:'doctors',component: DoctorsComponent},
   {path:'centres',component: CentresComponent},
   {path:'contact',component: ContactComponent},
   {path:'aboutus',component: AboutusComponent},
   {path:'facilities',component: FacilitiesComponent},
-  {path:'services',component: ServicesComponent}
+  {path:'services',component: ServicesComponent},
+  {path:'signup',component: SignUpComponent},
+  {path:'registration',component: RegistrationComponent},
+  {path:'feedback',component: FeedbackComponent},
+  {path:'helpdesk',component: HelpdeskComponent},
+  {path:'home',component: HomeComponent},
 
 ]
 @NgModule({
