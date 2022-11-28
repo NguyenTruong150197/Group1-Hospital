@@ -5,7 +5,7 @@
   width: 100%;
   line-height: 24px;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: #fff;
   font-family: Lato,sans-serif;
 }
 a {
@@ -13,7 +13,7 @@ a {
 }
 .container{
   width: 1090px;
-  height: 670px;
+  height: 1000px;
   margin: auto;
 }
 .map{

@@ -1,0 +1,145 @@
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.short-desc .col-4{
+  height: 200px;
+}
+.short-desc .col-4{
+  vertical-align: middle;
+  display: table-cell;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.three-column{
+  margin-top: 3rem;
+}
+
+.three-column i{
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem auto;
+  display: block;
+  color: #3065b5;
+}
+
+.three-column h4{
+  text-align: center;
+}
+.three-column p{
+  text-align: center;
+}
+.btn-secondary{
+  background-color: #3065b5;
+}
+
+.feature1{
+  background-image: url(../../assets/images/trong/pattern-2.png);
+  /*background-repeat: no-repeat;*/
+  /*background-position: left bottom;*/
+  /*!*background-size: 70%;*!*/
+}
+
+
+.featured-heading{
+  margin: 8rem 0 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+
+
+.department{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.script{
+  background-color: #3065b5;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+.script a{
+  color: white;
+}
+.script li a{
+  color: #f5f5f590;
+  line-height: 1.5rem;
+}
+.script li :hover{
+  color: white;
+}
+.department-wrap{
+  margin: 3.5rem 0 0 0;
+}
+.department-img img{
+  margin-bottom: 1rem;
+}
+.mb-0{
+  color: #3065b5;
+}
+
+.doc-script{
+  padding: 0 !important;
+}
+.doc-script-wrap{
+  padding: 0 !important;
+
+}
+
+
+.doctor-bg-img{
+  background-image: url(../../assets/images/trong/pattern-3.png);
+  background-repeat: no-repeat;
+  /*background-position: left bottom;*/
+  background-size: 80%;
+
+}
+
+
+.script-service{
+  margin: 0 0 0 1rem;
+  background-image: url(../../assets/images/service/sv.jpg);
+
+}
+.item-list{
+  padding: 3rem 0;
+}
+
+
+.partner-title{
+  font-size: 1.5rem;
+}
+.partner-logo{
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.f2-icon{
+  font-size: 2rem;
+  color: #3065b5;
+}
+
+.d-flex:hover{
+  scale: 1.1;
+  transition: 300ms;
+}
+.btn:hover{
+  transition: none;
+}
+
+.carousel-caption h1{
+  font-size: 5rem;
+}
+.carousel-caption p{
+  font-size: 2rem;
+}
+.three-feature{
+  padding: 0 5rem;
+}
