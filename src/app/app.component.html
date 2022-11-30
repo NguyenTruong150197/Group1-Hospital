@@ -1,14 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <script src="node_modules/bootstrap/js"></script>
-  <script src="node_modules/bootstrap/js"></script>
+<section class="top section">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 top-left">
+        <ul class="top-ul-left">
+          <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>No 8, Ton That Thuyet, My Dinh,Ha Noi</a></li>
+          <li><a href="#"><i class="fa fa-phone fa-1x"></i>Hotline +84 677150822</a></li>
+        </ul>
+      </div>
+      <div class="col-6 top-right">
+        <ul class="top-ul-right">
+          <li><a routerLink="/signup"><i class="fa-solid fa-user-plus"></i>Sign up</a></li>
+          <li><a href="#" routerLink="/registration"><i class="fa-solid fa-user"></i>Login</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-</head>
-<body>
+<section class="logo-nav section">
+  <nav class="navbar navbar-expand-md navbar-dark" >
+    <div class="container">
+      <img class="navbar-brand" src="assets/images/logo.png" width="40px">
+      <a class="navbar-brand" routerLink="/home" href="/home">Cambridge Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+              aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse space-home-logo" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               aria-expanded="false" routerLink="/centres">Department</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cardiology</a></li>
+              <li><a class="dropdown-item" href="#">Neurology</a></li>
+              <li><a class="dropdown-item" href="#">Urology</a></li>
+              <li><a class="dropdown-item" href="#">Gynecological</a></li>
+              <li><a class="dropdown-item" href="#">Pediatrical</a></li>
+              <li><a class="dropdown-item" href="#">Laboratory</a></li>
+              <li><a class="dropdown-item" href="#">Laboratory</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               aria-expanded="false" routerLink="/doctors">Doctor</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cardiology</a></li>
+              <li><a class="dropdown-item" href="#">Neurology</a></li>
+              <li><a class="dropdown-item" href="#">Urology</a></li>
+              <li><a class="dropdown-item" href="#">Gynecological</a></li>
+              <li><a class="dropdown-item" href="#">Pediatrical</a></li>
+              <li><a class="dropdown-item" href="#">Laboratory</a></li>
+              <li><a class="dropdown-item" href="#">Laboratory</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               routerLink="/services" aria-expanded="false">Service</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Nephrologist Care</a></li>
+              <li><a class="dropdown-item" href="#">Eye Care</a></li>
+              <li><a class="dropdown-item" href="#">Pediatrician Clinic</a></li>
+              <li><a class="dropdown-item" href="#">Prenatal Care</a></li>
+              <li><a class="dropdown-item" href="#">Medical Counseling</a></li>
+              <li><a class="dropdown-item" href="#">Eldery Care</a></li>
+              <li><a class="dropdown-item" href="#">Competitive Doctors</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+               routerLink="/facilities" aria-expanded="false">Facility</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Room</a></li>
+              <li><a class="dropdown-item" href="#">Equipment</a></li>
+              <li><a class="dropdown-item" href="#">Medical Facility</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" routerLink="/aboutus">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" routerLink="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" routerLink="/feedback">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" routerLink="/helpdesk">Helpdesk</a>
+          </li>
+          <li class="nav-item dropdown show" >
+            <a class="nav-link dropdown-toggle active" href="#"
+               data-bs-toggle="dropdown" aria-expanded="false">More</a>
+            <ul class="dropdown-menu show">
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="">Appointment</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/feedback">Feedback</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/helpdesk">Helpdesk</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" action="#">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-default nav-search" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</section>
 
 <router-outlet></router-outlet>
 
-</body>
+<footer class="py-5 foot">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 offset-md-1 mb-3">
+        <div class="footer-logo">
+          <img src="assets/images/footer-logo.png" width="70%">
+        </div>
+        <hr>
+        <div class="footer-text">
+          <p>Our hospital has grown to provide a world class facility for the clinic advanced restorative.</p>
+
+          <p>We are among the most qualified implant providers in the India with over 30 years of quality
+            training and experience.</p>
+        </div>
+        <div class="social">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a> </li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
+            <li><a href="#"><i class="fa-brands fa-skype"></i></a> </li>
+            <li><a href="#"><i class="fa-solid fa-at"></i></a> </li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>About Us</h5>
+        <hr>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Introduction</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Department</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Doctor Team</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Service</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facility</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact</h5>
+        <hr>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>No 8, My Dinh,Ha Noi</a>
+          </li>
+          <li class="nav-item mb-2"><a href="#"><i class="fa fa-phone fa-1x"></i>Customer Service</a>
+          </li>
+          <li class="nav-item mb-2"><a href="mailto:ch@gmail.com"><i class="fa-solid fa-at"></i>ch@gmail.com</a>
+          </li>
+          <li><i class="fa-regular fa-clock"></i>Mon-Sat 8.00-18.00</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3 map">
+        <h5>Maps</h5>
+        <hr>
+        <iframe class="foot-map" _ngcontent-jft-c19=""
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.097863491619!2d105.77960061391452!3d21.02876989315618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b3285df81f%3A0x97be82a66bbe646b!2sDetech%20Building!5e0!3m2!1svi!2s!4v1669190769234!5m2!1svi!2s"
+                width="600" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" style="border: 0;">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="copyright d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top ">
+      <p>&copy; 2022 Cambridge Hospital, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li><a href="#">Terms and Conditions |</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+

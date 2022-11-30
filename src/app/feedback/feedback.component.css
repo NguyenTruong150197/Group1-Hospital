@@ -1,0 +1,100 @@
+.doc-script-wrap{
+  background-image: url(../../assets/images/banner/bn41.jpg);
+}
+.client-avt{
+  border-right: 1px solid #80808090;
+}
+.client-avt img{
+  width: calc(100%);
+  /*border-radius: 50%;*/
+  border: 1px solid #80808090;
+}
+.client-feedback-wrap{
+  margin: 4rem 0;
+}
+.client-feedback{
+  margin: 0 0 2rem 0;
+  padding: 1rem;
+  border: 1px solid gray;
+  box-shadow: 0 0 2px gray;
+  /*border-radius: 0.5rem;*/
+}
+.client-info{
+  padding: 1rem;
+}
+.send-feedback{
+  color: white;
+  background-color: #3065b5;
+  padding: 2rem;
+  border: 1px solid gray;
+  box-shadow: 0 0 2px gray;
+  /*border-radius: 1rem;*/
+  margin: 0 !important;
+}
+.send-feedback input{
+  padding: 0 0 0 1rem;
+  height: 3rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  /*border-radius: 0.5rem;*/
+  font-size: 1.3rem;
+  border: none;
+}
+.send-feedback input:focus{
+  outline: none;
+}
+button{
+  border: none;
+}
+textarea{
+  padding: 0 0 0 1rem;
+  height: 3rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  /*border-radius: 0.5rem;*/
+  font-size: 1.3rem;
+}
+textarea:focus{
+  outline: none;
+}
+.fb-text{
+  height: 8rem !important;
+}
+.fb-btn{
+  padding: 0 1rem;
+  background-color: white;
+  height: 3rem;
+  color: #152858;
+  /*border-radius: 0.5rem;*/
+  font-size: 1.3rem;
+}
+.short1{
+  width: 30%;
+}
+.feedback-title{
+  color: white;
+}
+.list-group-item.active{
+  background-color: white ;
+  color: #212529;
+
+}
+.topic{
+  background-color: #3065b5;
+  color: #212529;
+  font-size: 2rem;
+  /*border-radius: 0.5rem;*/
+}
+.topic-f2{
+  color: white;
+  font-size: 2rem;
+}
+.second-title{
+  margin-top: 2rem;
+}
+.div-2-container{
+  background-color: aliceblue;
+}
+.page-number{
+  padding: 0;
+}
