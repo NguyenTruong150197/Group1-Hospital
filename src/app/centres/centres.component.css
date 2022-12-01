@@ -1,366 +1,168 @@
 #main{
   margin: 0;
   padding: 0;
-  float: left;
   width: 100%;
   color: #808080;
   font-size: 14px;
-  box-sizing: border-box;
   background-color: #fff;
   font-family: Helvetica,sans-serif;
 }
-.container{
-  width: 1090px;
-  height: 2520px;
-  margin: auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-li{
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-.sidebar{
-  width: 245px;
-  float: left;
-  font-size: 14px;
-  color: #ffffff;
-}
-.content{
-  width: calc(100% - 245px - 32px);
-  float: right;
-}
 
 /*sidebar*/
-.widget1{
-  width: 100%;
-  height: 380px;
-  padding: 30px 30px;
-  margin-top: 0;
-}
-.widget1 h3{
-  font-size:  24px;
-  margin-bottom: 25px;
-}
-.widget1 ul{
-  padding: 10px 0;
-}
-.widget1 ul li{
-  padding-bottom: 10px;
-}
-.widget1 ul li a{
+.widget{
+  padding: 30px 20px 40px;
+  margin-bottom: 2px;
   color: #ffffff;
 }
-.widget1 ul li a:hover{
-  color: #808080;
+.widget__title{
+  margin: 0 0 30px 30px;
 }
-
-.widget2{
-  width: 100%;
-  height: 285px;
-  padding: 30px 30px;
-  margin-top: 0;
+.widget ul{
+  list-style: none;
 }
-.widget2 h3{
-  font-size:  24px;
-  margin-bottom: 25px;
+.widget li a{
+  color: #ffffff;
 }
-.widget2 ul{
-  padding: 10px 0;
-}
-.widget2 ul li{
-  padding-bottom: 10px;
-}
-.-align-right{
-  float: right;
-}
-
-.widget3{
-  width: 100%;
-  height: 285px;
-  padding: 30px 30px;
-  margin-top: 0;
-}
-.widget3 h3{
-  font-size:  24px;
-  margin-bottom: 25px;
-}
-.widget3 ul{
-  padding: 10px 0;
-}
-.widget3 ul li{
-  padding-bottom: 10px;
+.hr0{
+  width: 90%;
 }
 .icon{
-  padding-right: 10px;
-}
-.fa-map-marker{
-  padding-right: 15px;
-}
-
-.hr0{
-  width: 185px;
-  margin: 8px 0;
-}
-.hr1{
-  margin: 0;
+  padding-right: 5px;
 }
 
 /*content*/
-.introduction{
+.content{
+  margin-left: 20px;
+}
+.introduction img{
   width: 100%;
 }
-img{
-  width: 100%;
-}
-.introduction h2{
-  margin: 30px 0 20px;
-  font-size: 24px;
-  color: #2d3438;
-  font-weight: bold;
+.content__title{
+  color: #212529;
+  margin: 30px 0;
 }
 .introduction p{
-  margin: 0;
-  padding-bottom: 20px;
-}
-.hr2{
-  background-image: linear-gradient(45deg,
-  hsla(0, 0%, 5%, 0),
-  hsla(0, 0%, 5%, 0) 33.33%,
-  hsl(0, 0%, 50%) 33.33%,
-  hsl(0, 0%, 50%) 66.67%,
-  hsla(0, 0%, 5%, 0) 66.67%,
-  hsla(0, 0%, 5%, 0) 100%);
-  background-size: 8px 100%;
-  float: left;
-  width: 250px;
-  height: 10px;
   color: #808080;
-  margin: 30px 0 50px;
+  line-height: 1.8;
+  margin-bottom: 40px;
 }
-.price{
-  float: left;
-  width: 100%;
+.price__col{
+  margin: 30px 0;
 }
-.column{
-  float: left;
-  width: calc(100% / 3);
-}
-.column h3{
-  padding: 0;
-  margin: 0;
-  color: #2d3438;
+.price__title{
+  color: #212529;
   font-size: 18px;
-  font-weight: normal;
+  margin: 0;
 }
-.hr3{
-  margin: 10px 0 30px;
-}
-.column ul{
-  float: left;
-  margin: 0 0 0 15px;
-  padding: 0;
-}
-.column li{
+.price__col ul{
+  padding-left: 16px;
   list-style: square;
 }
-.column ul li{
-  padding-bottom: 12px;
+.price__col ul li{
+  margin-bottom: 10px;
 }
-.column ul li::marker{
-  color: #4bbcd7;
-}
-
-.intro_doctors{
-  float: left;
-  padding: 0 0 20px 0;
-  margin: 0;
-  width: 100%;
-}
-.intro_doctors h2{
-  font-size: 24px;
-  color: #2d3438;
-  margin: 0;
-  font-weight: bold;
-}
-.intro_doctors p{
-  margin: 10px 0 40px;
+.intro_doctor p{
+  color: #808080;
+  line-height: 1.8;
 }
 .profile_doctors_column{
-  width: calc(100% / 3 - 30px);
-  float: left;
-  margin: 0 30px 0 0;
+  width: 290px;
   padding: 0;
-  border: 1px solid rgba(128, 128, 128, 0.3);
-  overflow: hidden;            /*để cho cái ảnh khi hover thì hình ảnh không zoom ra ngoài*/
+  margin: 20px 20px 30px 10px;
+  overflow: hidden;        /*để cho cái ảnh khi */
 }
 .profile_doctors_column img{
   width: 100%;
-  height: 233px;
-  object-fit: cover;          /*thay đổi kích thước ảnh phù hợp*/
+  height: 320px;
+  object-fit: cover;
   transition: 0.5s;
   overflow: hidden;
+  cursor: pointer;
 }
 .profile_doctors_column img:hover{
-  transform: scale(1.2);
-}
-
-/*Mai sửa tiếp cái hover images ở đây*/
-
-
-
-
-.heading{
-  width: 100%;
-  padding: 16px 20px;
-  margin: 0;
+  transform: scale(1.05);
 }
 .heading h3{
+  color: #212529;
+  font-size: 20px;
+  margin: 20px 20px 10px;
+  cursor: pointer;
+}
+.heading h3:hover{
   color: #4bbcd7;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 6px;
 }
 .heading h6{
-  color: #2d3438;
-  font-size: 14px;
-  margin: 0;
-}
-.hr4{
-  margin: 0;
+  color: rgba(33,37,41,0.8);
+  font-size: 16px;
+  margin-left: 20px;
 }
 .profile_doctors_column p{
-  padding: 16px 20px;
-  margin: 0;
+  font-size: 14px;
+  color: #808080;
+  margin-left: 20px;
 }
 .profile_doctors_column ul{
-  margin: 0;
-  padding: 16px 20px;
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
 }
-.profile_doctors_column ul li{
-  line-height: 1.8;
-}
-.profile_doctors_column ul li i{
+.doctor__icon{
   color: #4bbcd7;
-  margin-right: 15px;
-}
-
-
-/*appoitments*/
-.appointments{
-  margin: 0;
-  padding-bottom: 50px;
-}
-.appointments h2{
-  font-size: 24px;
-  color: #2d3438;
-  margin: 0;
-  font-weight: bold;
+  margin-right: 5px;
 }
 .appointments p{
-  margin: 10px 0 40px;
+  padding-bottom: 10px;
 }
-.form{
-  width: 100%;
-  float: left;
-  padding: 0;
-  margin: 0;
-}
-input{
-  border: 1px solid #b0afaf;
-}
-select{
-  border: 1px solid #b0afaf;
-}
-.col{
-  width: calc(100%/2 - 20px);
-}
-.col p{
-  float: left;
-  width: 100%;
-  margin: 0;
-  padding: 0 0 20px 0;
-}
-.wrap{
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
+.form__col{
+  color: #808080;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 .select{
-  width: 100%;
-  float: left;
+  margin-bottom: 20px;
+  color: #808080;
   height: 40px;
-  color: #808080;
   padding-left: 10px;
-}
-option{
-  color: #808080;
   font-size: 16px;
 }
 .form-text{
-  width: 100%;
-  float: left;
+  margin-bottom: 20px;
   height: 40px;
-  color: #808080;
-  margin: 0;
-  font-size: 14px;
   padding-left: 10px;
+  font-size: 16px;
 }
 .tel{
-  width: 100%;
-  float: left;
+  margin-top: 4px;
+  margin-bottom: 20px;
   height: 40px;
-  color: #808080;
-  margin: 0;
-  font-size: 14px;
   padding-left: 10px;
+  font-size: 16px;
 }
 .date{
-  width: 100%;
-  float: left;
+  margin-top: 4px;
+  margin-bottom: 20px;
   height: 40px;
   color: #808080;
-  margin: 0;
-  font-size: 14px;
-  padding: 0 10px;
-}
-.row{
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-.one_first{
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0 0 20px 0;
-}
-.one_first p{
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
+  padding-left: 10px;
+  font-size: 16px;
 }
 .textarea{
-  width: 100%;
-  border: 1px solid #b0afaf;
-  margin: 0;
-  padding: 10px 0 0 10px;
   color: #808080;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
 }
-.submit{
-  width: 250px;
-  height: 50px;
-  background-color: #ffffff;
-  font-size: 18px;
+.form__bottom{
   padding: 0;
-  margin: 0;
+  height: 50px;
+  margin: 30px 0 50px 10px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid #808080;
 }
-.submit:hover{
+.form__bottom:hover{
   background-color: #4bbcd7;
   color: #ffffff;
+  transition: ease .1s;
 }
