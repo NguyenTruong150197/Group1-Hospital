@@ -1,41 +1,77 @@
+<section class="section regis modal-sign-in">
+  <div class="container main ">
+    <div class="row ">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0 regis-top-pad">
+            <h1 class="fw-bold mb-0 fs-2">Login</h1>
+          </div>
 
-<div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-4 shadow">
-      <div class="modal-header p-5 pb-4 border-bottom-0 regis-top-pad">
-        <h1 class="fw-bold mb-0 fs-2">Login</h1>
+          <div class="modal-body p-5 pt-0">
+            <form class="need-validation">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id=" " placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary sign-up-button" type="submit">Login</button>
+              <p class="no-account">Have no account? <a href="#"><span class="sign-up-link">Sign up</span></a></p>
+              <hr class="my-2">
+              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3 fb-sign-up su" type="submit">
+                <a href="https://www.facebook.com/login"><i class="fa-brands fa-facebook"></i></a>
+                Login with Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3 gmail-sign-up su" type="submit">
+                <a href="https://www.google.com/intl/vi/gmail/about/"><i class="fa-solid fa-at"></i></a>
+                Login with Gmail
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-
-      <div class="modal-body p-5 pt-0">
-        <form class="need-validation">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" required>
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" required>
-            <label for="floatingPassword">Password</label>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0 regis-top-pad">
+            <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+            <h1 class="fw-bold mb-0 fs-2">Sign up</h1>
           </div>
 
-          <div class="form-check mb-3">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember"> Remember me
-            </label>
+          <div class="modal-body p-5 pt-0">
+            <form method="get" action="" class="need-validation">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary sign-up-button" type="submit">Sign up</button>
+              <small class="small-text">By clicking Sign up, you agree to the <a href="#"><span class="term">Terms of use.</span></a></small>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3 fb-sign-up su" type="submit">
+                <a href="https://www.facebook.com/login"><i class="fa-brands fa-facebook"></i></a>
+                Sign up with Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3 gmail-sign-up su" type="submit">
+                <a href="https://www.google.com/intl/vi/gmail/about/"><i class="fa-solid fa-at"></i></a>
+                Sign up with Gmail
+              </button>
+            </form>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary sign-up-button" type="submit">Login</button>
-          <p class="no-account">Have no account? <a href="#"><span class="sign-up-link">Sign up</span></a></p>
-          <hr class="my-2">
-          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3 fb-sign-up su" type="submit">
-            <a href="https://www.facebook.com/login"><i class="fa-brands fa-facebook"></i></a>
-            Login with Facebook
-          </button>
-          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3 gmail-sign-up su" type="submit">
-            <a href="https://www.google.com/intl/vi/gmail/about/"><i class="fa-solid fa-at"></i></a>
-            Login with Gmail
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>

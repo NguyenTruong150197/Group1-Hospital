@@ -1,4 +1,6 @@
 .infra-content{
-  padding: 0 0 3rem 0;
-
+  padding: 3rem 0 3rem 0;
+}
+.col-7 img{
+  width: 100%;
 }
