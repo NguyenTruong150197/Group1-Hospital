@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import {DoctorsComponent} from "./doctors/doctors.component";
 import {ContactComponent} from "./contact/contact.component";
-import {CentresComponent} from "./centres/centres.component";
+import {DepartmentComponent} from "./department/department.component";
 import {AboutusComponent} from "./aboutus/aboutus.component";
 import {FacilitiesComponent} from "./facilities/facilities.component";
 import {ServicesComponent} from "./services/services.component";
@@ -23,7 +23,7 @@ import { EquipmentComponent } from './equipment/equipment.component';
 const appRoutes: Routes=[
   {path:'',component: HomeComponent},
   {path:'doctors',component: DoctorsComponent},
-  {path:'centres',component: CentresComponent},
+  {path:'department',component: DepartmentComponent},
   {path:'contact',component: ContactComponent},
   {path:'about-us',component: AboutusComponent},
   {path:'facilities',component: FacilitiesComponent},
@@ -40,7 +40,12 @@ const appRoutes: Routes=[
 ]
 @NgModule({
   declarations: [
-    AppComponent,DoctorsComponent,CentresComponent,ContactComponent,AboutusComponent,FacilitiesComponent,
+    AppComponent,
+    DoctorsComponent,
+    DepartmentComponent,
+    ContactComponent,
+    AboutusComponent,
+    FacilitiesComponent,
     ServicesComponent,
     HomeComponent,
     FeedbackComponent,
@@ -66,7 +71,7 @@ const appRoutes: Routes=[
     //   {path:'helpdesk',component: HelpdeskComponent},
     //   {path:'**',component: PageNotFoundComponent},
     //   {path:'doctors',component: DoctorsComponent},
-    //   {path:'centres',component: CentresComponent},
+    //   {path:'department',component: DepartmentComponent},
     //   {path:'contact',component: ContactComponent},
     //   {path:'about-us',component: AboutusComponent},
     //   {path:'facilities',component: FacilitiesComponent},
