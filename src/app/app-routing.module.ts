@@ -12,6 +12,7 @@ import { HelpdeskComponent} from "./helpdesk/helpdesk.component";
 import { RoomComponent} from "./room/room.component";
 import { RoomContentComponent} from "./room-content/room-content.component";
 import { FaqsComponent} from "./faqs/faqs.component";
+import {TimetableComponent} from "./timetable/timetable.component";
 
 
 const routes: Routes = [
@@ -26,9 +27,11 @@ const routes: Routes = [
       {path: 'room-content', component: RoomContentComponent}
     ]
   },
-  {path:'helpdesk',component: RoomComponent,
+
+  {path:'helpdesk',component: HelpdeskComponent,
     children:[
-      {path: 'faq', component: FaqsComponent}
+      {path: 'faq', component: FaqsComponent},
+      {path: 'timetable', component: TimetableComponent},
     ]
   },
 ];

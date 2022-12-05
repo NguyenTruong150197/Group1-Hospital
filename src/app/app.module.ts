@@ -22,6 +22,7 @@ import { RoomContentComponent } from './room-content/room-content.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TimetableComponent } from './timetable/timetable.component';
 const appRoutes: Routes=[
   {path:'',component: HomeComponent},
   {path:'doctors',component: DoctorsComponent},
@@ -60,7 +61,8 @@ const appRoutes: Routes=[
     InfrastructureComponent,
     RoomContentComponent,
     EquipmentComponent,
-    FaqsComponent
+    FaqsComponent,
+    TimetableComponent
   ],
   imports: [
     BrowserModule,
