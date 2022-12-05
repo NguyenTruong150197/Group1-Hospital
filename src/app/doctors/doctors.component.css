@@ -1,57 +1,47 @@
 #main{
   margin: 0;
   padding: 0;
-  float: left;
   width: 100%;
   color: #808080;
   font-size: 14px;
-  box-sizing: border-box;
   background-color: #fff;
   font-family: Helvetica,sans-serif;
 }
 a {
   text-decoration: none;
 }
-.container{
-  width: 1090px;
-  margin: auto;
-}
-h2{
-  width: 100%;
+.title{
   line-height: normal;
   color: #2D2D29;
-  font: 24px Lato;
+  font: 32px Lato;
   font-weight: bold;
-  margin-bottom: 30px;
-  padding-top: 60px;
-  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 40px;
 }
 .items{
-  width: 50%;
-  float: left;
-  display: block;
-  padding: 0 30px 80px 0;
-  text-align: left;
-  font-weight: 400;
-  line-height: 24px;
-  color: #808080;
+  font-weight: normal;
+  padding: 0;
+  width: 45%;
+  margin: 0 65px 80px 0;
 }
+
 .image{
   float: left;
   display: block;
 }
 .image img{
-  max-width: 100%;
+  width: 100%;
   border-radius: 50%;
-  border: 5px solid #0390b2 ;
+  border: 4px solid #0390b2 ;
 }
 .details{
   width: calc(100% - 103px - 30px);
   float: right;
+  padding-left: 10px;
 }
 .details h4{
-  height: 40px;
-  font: 14px Lato;
+  height: 45px;
+  font: 18px Lato;
   margin-bottom: 20px;
   color: #2D2D29;
   background-color: #ededed;
@@ -59,32 +49,33 @@ h2{
 .details h4 i {
   float: left;
   color: #ffffff;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 100%;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 14px;
   margin-right: 10px;
   font-size: 16px;
   background-color: #4bbcd7;
 }
 .name{
   font-weight: bold;
-  line-height: 2.8;
+  line-height: 2.5;
 }
 .intro-area{
   margin-bottom: 25px;
+  line-height: 1.8;
 }
 .details h5{
-  margin-bottom: 5px;
-  font-size: 14px;
-  font-style: italic;
-  color: #919191;
+  margin: 30px 0 8px;
+  font-size: 18px;
 }
 .email{
   text-decoration: none;
+  font-size: 18px;
 }
 .email a{
   color: #4bbcd7;
+  font-size: 18px;
 }
 .details ul{
   float: left;
@@ -92,14 +83,14 @@ h2{
 }
 .details ul li{
   float: left;
-  width: 36px;
-  height: 36px;
-  line-height: 2.3;
+  width: 40px;
+  height: 40px;
+  line-height: 2.5;
   list-style: none;
   text-align: center;
-  margin-right: 12px;
+  margin-right: 25px;
   border-radius: 50%;
-  border: 2px solid #cacaca;
+  border: 2px solid #808080;
   background-color: #ffffff;
 }
 .details ul li a{
@@ -112,35 +103,14 @@ h2{
   color: #ffffff;
   background-color: #4bbcd7 ;
 }
-
-
-
-
-/*.fa-twitter:hover{*/
-/*  color: #4bbcd7;*/
-/*}*/
-/*.fa-facebook{*/
-/*  color: #3b5998;*/
-/*}*/
-/*.fa-google{*/
-/*  color: #e50914;*/
-/*}*/
-/*.fa-linkedin{*/
-/*  color: #0077b5;*/
-/*}*/
-
-/*Bổ sung thêm hover của từng app ở đây nữa*/
-
-
-
 /*css table*/
 .table{
-  border: 1px solid #f4f4f4;
+  border: 2px solid #f4f4f4;
   color: #808080;
   box-sizing: border-box;
 }
 .table th{
-  padding: 18px 15px;
+  padding: 25px 50px 25px 15px;
 }
 .table td{
   color: #808080;
@@ -152,13 +122,14 @@ h2{
 }
 .table a{
   color: #4bbcd7;
-
+  font-size: 18px;
+  font-family: Helvetica,sans-serif;
 }
 .fa-user-md{
   color: #4bbcd7;
   word-spacing: 2px;
 }
-.table td i:hover{
+.table td a:hover{
   text-decoration: underline;
 }
 .table button{
@@ -170,22 +141,17 @@ h2{
   text-decoration: underline;
   background-color: #4bbcd7 ;
 }
-.physicians p{
-  padding: 20px 0 40px;
-}
 /*callout*/
 .bd-callout {
   position:relative;
-  float: left;
-  width: 1026.08px;
+  width: 97.5%;
   height: 119px;
   padding: 1.25rem;
   box-sizing: border-box;
   font-weight: normal;
-  margin-top: 25px;
-  margin-bottom: 6rem;
+  margin: 60px 0 100px 0;
   border: 1px solid #eee;
-  border-left-width: .25rem;
+  border-left-width: .3rem;
   background-color: #e3f4fb;
 }
 /*triangle*/
@@ -204,22 +170,7 @@ h2{
   color: #e3f4fb;
 }
 .bd-callout h4 {
-  margin-top: 0;
   margin-bottom: .25rem;
-}
-
-.bd-callout p:last-child {
-  margin-bottom: 0;
-  font-size: 16px;
-  color: #2D2D29;
-}
-
-.bd-callout code {
-  border-radius: .25rem
-}
-
-.bd-callout+.bd-callout {
-  margin-top: -.25rem
 }
 .bd-callout-info {
   font-size: 16px;
@@ -230,7 +181,7 @@ h2{
 }
 .bd-callout-info h4 {
   color: #2D2D29;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: bold;
   padding-top: 5px;
 }
@@ -244,18 +195,4 @@ h2{
   color: #fafafa;
   text-decoration: underline;
   background-color: #4bbcd7 ;
-}
-/*hr*/
-.hr{
-  height: 10px;
-  background-image: linear-gradient(45deg,
-  hsla(0, 0%, 5%, 0),
-  hsla(0, 0%, 5%, 0) 33.33%,
-  hsl(0, 0%, 50%) 33.33%,
-  hsl(0, 0%, 50%) 66.67%,
-  hsla(0, 0%, 5%, 0) 66.67%,
-  hsla(0, 0%, 5%, 0) 100%);
-  background-size: 8px 100%;
-  width: 250px;
-  color: #808080;
 }

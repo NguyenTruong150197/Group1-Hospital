@@ -1,55 +1,38 @@
-#main{
-  margin: 0;
-  padding: 0;
-  float: left;
-  width: 100%;
-  color: #808080;
-  font-size: 14px;
-  box-sizing: border-box;
-  background-color: #fff;
-  font-family: Helvetica,sans-serif;
-}
-.container{
-  width: 1090px;
-  height: 2000px;
-  margin: auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-li{
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
 img{
   width: 100%;
 }
-.sidebar{
-  width: 245px;
-  float: left;
+
+
+#main{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #808080;
   font-size: 14px;
+  background-color: #fff;
+  font-family: Helvetica,sans-serif;
+}
+
+/*sidebar*/
+.widget{
+  padding: 30px 20px 40px;
+  margin-bottom: 2px;
   color: #ffffff;
 }
-.content{
-  width: calc(100% - 245px - 32px);
-  float: right;
+.widget__title{
+  margin: 0 0 30px 30px;
 }
-.search{
-  width: 100%;
-  min-height: 165px;
-  background-color: #4bbcd7;
+.widget ul{
+  list-style: none;
 }
-.search h3{
-  margin: 0;
-  padding: 30px 30px 25px;
-  font-size: 24px;
-  color: #fafafa;
+.widget li a{
+  color: #ffffff;
 }
-/*SEARCH*/
-body{
-  background: #343d46;
+.hr0{
+  width: 90%;
 }
+
+/*search*/
 .box{
   margin: 0;
   width: 185px;
@@ -114,178 +97,50 @@ body{
   -o-transform:scale(1.2); /* Opera */
   transform:scale(1.2);
 }
-/*WIDGET*/
-.hr1{
-  margin: 0;
-}
-.widget{
-  width: 100%;
-  height: auto;
-  padding: 30px 30px;
-  margin-top: 0;
-}
-.widget h3{
-  font-size:  24px;
-  margin-bottom: 25px;
-  color: #fafafa;
-}
-.widget ul{
-  margin: 0;
-  padding: 10px 0;
-}
-.widget ul li{
-  padding-bottom: 10px;
-}
-.widget ul li a{
-  color: #fafafa;
-}
-.-align-right{
-  float: right;
-}
-.hr0{
-  width: 185px;
-  margin: 8px 0;
-}
-.tag{
-  width: 100%;
-  min-height: 300px;
-  padding: 30px 30px;
-  margin-top: 0;
-  box-sizing: border-box;
-}
-.tag h3{
-  font-size:  24px;
-  margin-bottom: 35px;
-  color: #fafafa;
-}
 .tag-cloud{
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 30px;
 }
 .tag-cloud-link{
   color: #2d3438;
   font-weight: bold;
   margin: 0 20px 20px 0;
-  padding: 8px 10px;
-  min-width: 50px;
+  padding: 8px 16px;
+  min-width: 70px;
   background-color: #fafafa;
   border-radius: 50px;
 }
-
-/*CONTENT*/
-.introduction{
-  width: 100%;
+.content{
+  margin-left: 20px;
 }
-img{
-  width: 100%;
+.intro_p{
+  margin: 30px 0 20px;
+  line-height: 1.8;
 }
 .introduction h5{
-  margin: 30px 0 0;
   font-size: 24px;
-  color: #2d3438;
-  font-weight: bold;
+  color: #212529;
+  font-weight: normal;
 }
-.introduction p{
-  padding-top: 30px;
+.content__main{
+  margin-top: 30px;
 }
-.column{
-  width: 100%;
-  height: 320px;
-  margin: 0;
-  padding: 20px 0 60px
-}
-.column-1{
-  float: left;
-  width: 60%;
-  height: auto;
-}
-.column-1 p{
-  margin: 0;
-  padding: 0 20px 10px 0;
-}
-.column-2{
-  float: left;
-  width: 40%;
-}
-.column-2 img{
-  width: 100%;
-  padding-top: 5px;
+.row_p{
+  margin-top: -5px;
+  line-height: 1.8;
 }
 .blockquote{
-  width: 100%;
-  height: 260px;
+  margin: 50px 0;
   background-color: #4bbcd7;
+  width: 100%;
+  height: 270px;
   font-size: 24px;
   color: #2D2D29;
 }
-.blockquote p{
+.blockquote_p{
   padding: 60px 50px;
-  box-sizing: border-box;
+  color: #212529;
+  word-spacing: normal;
   font-family: Lucida Console,sans-serif;
-}
-.hr2{
-  background-image: linear-gradient(45deg,
-  hsla(0, 0%, 5%, 0),
-  hsla(0, 0%, 5%, 0) 33.33%,
-  hsl(0, 0%, 50%) 33.33%,
-  hsl(0, 0%, 50%) 66.67%,
-  hsla(0, 0%, 5%, 0) 66.67%,
-  hsla(0, 0%, 5%, 0) 100%);
-  background-size: 8px 100%;
-  float: left;
-  width: 250px;
-  height: 10px;
-  color: #808080;
-  margin: 80px 0 30px;
-}
-.title1{
-  font-size: 36px;
-  color: #2D2D29;
-  margin: 0;
-  padding: 0;
-}
-.form{
-  min-height: 400px;
-  color: #808080;
-  padding: 50px 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.form-row{
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-}
-.form-text{
-  flex-basis: 47%;
-  padding: 9px 15px;
-}
-.textarea{
-  color: #808080;
-  padding: 9px 15px;
-}
-.form-check{
-  justify-content: normal;
-}
-.form-check-label{
-  padding-left: 10px;
-}
-.submit{
-  padding: 10px 45px;
-  min-width: 120px;
-  cursor: pointer;
-  border: 1px solid #878787;
-  outline: #4bbcd7;
-  font-size: 18px;
-  background-color: #ffffff;
-}
-.submit:hover{
-  color: #fafafa;
-  background-color: #4bbcd7;
-  transition: ease 0.2s;
-  opacity: 0.8;
 }

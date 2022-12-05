@@ -4,8 +4,9 @@
 .no-account{
   margin-bottom: 0 !important;
 }
-.modal-signin{
+.modal-sign-in{
   background-image: url(../../assets/images/banner/bn2.jpg);
+  padding: 3rem 0;
 }
 .sign-up-button{
   background-color: #3065b5;
@@ -41,4 +42,15 @@
 .sign-up-link{
   font-weight: bold;
   color: #3065b5;
+}
+.modal-content{
+  background-color: white;
+}
+
+.term{
+  color: #3065b5;
+  font-weight: bolder;
+}
+.term:hover{
+  color: #4bbcd7;
 }

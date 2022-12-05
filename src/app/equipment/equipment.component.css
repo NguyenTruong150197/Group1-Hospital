@@ -1,0 +1,38 @@
+
+.sidebar-bg{
+  background-color: #3065b5;
+}
+.nav-link.active{
+  background-color: #3065b5;
+}
+.main{
+  margin-top: 3rem;
+}
+.div-2-container{
+  background-color: aliceblue;
+  padding: 2rem 1rem;
+}
+.helpdesk-script{
+  color: white;
+}
+input{
+  height: 3rem;
+}
+button{
+  height: 3rem;
+  background-color: rebeccapurple;
+  color: white;
+  width: 5rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+.room-img img{
+  width: 100%;
+}
+h4{
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #3065b5;
+}

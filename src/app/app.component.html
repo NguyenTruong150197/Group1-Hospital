@@ -3,14 +3,15 @@
     <div class="row">
       <div class="col-6 top-left">
         <ul class="top-ul-left">
-          <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>No 8, Ton That Thuyet, My Dinh,Ha Noi</a></li>
-          <li><a href="#"><i class="fa fa-phone fa-1x"></i>Hotline +84 677150822</a></li>
+          <li><a routerLink="/contact"><i class="fa-sharp fa-solid fa-location-dot"></i>No1, Los Angeles, California, US</a></li>
+          <li><i class="fa-solid fa-clock"></i>Mon - Sat 8.00 - 18.00</li>
         </ul>
       </div>
       <div class="col-6 top-right">
         <ul class="top-ul-right">
-          <li><a routerLink="/signup"><i class="fa-solid fa-user-plus"></i>Sign up</a></li>
-          <li><a href="#" routerLink="/registration"><i class="fa-solid fa-user"></i>Login</a> </li>
+
+          <li><a routerLink="/registration"><i class="fa-solid fa-user"></i>Login</a> </li>
+          <li><a href="tel:098-808-0536"><i class="fa-solid fa-truck-medical"></i>Ambulance</a></li>
         </ul>
       </div>
     </div>
@@ -20,13 +21,12 @@
 <section class="logo-nav section">
   <nav class="navbar navbar-expand-md navbar-dark" >
     <div class="container">
-      <img class="navbar-brand" src="assets/images/logo.png" width="40px">
+      <img class="navbar-brand" src="assets/images/logo.png" width="60px">
       <a class="navbar-brand" routerLink="/home" href="/home">Cambridge Hospital</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
               aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse space-home-logo" id="navbarsExample07">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -34,72 +34,63 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
-               aria-expanded="false" routerLink="/centres">Department</a>
+               aria-expanded="false" routerLink="/department">Department</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cardiology</a></li>
-              <li><a class="dropdown-item" href="#">Neurology</a></li>
-              <li><a class="dropdown-item" href="#">Urology</a></li>
-              <li><a class="dropdown-item" href="#">Gynecological</a></li>
-              <li><a class="dropdown-item" href="#">Pediatrical</a></li>
-              <li><a class="dropdown-item" href="#">Laboratory</a></li>
-              <li><a class="dropdown-item" href="#">Laboratory</a></li>
+              <li><a class="dropdown-item" routerLink="/department" href="#">Cardiology</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Neurology</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Urology</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Gynecological</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Pediatrical</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Laboratory</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Laboratory</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
                aria-expanded="false" routerLink="/doctors">Doctor</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cardiology</a></li>
-              <li><a class="dropdown-item" href="#">Neurology</a></li>
-              <li><a class="dropdown-item" href="#">Urology</a></li>
-              <li><a class="dropdown-item" href="#">Gynecological</a></li>
-              <li><a class="dropdown-item" href="#">Pediatrical</a></li>
-              <li><a class="dropdown-item" href="#">Laboratory</a></li>
-              <li><a class="dropdown-item" href="#">Laboratory</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/doctors">Cardiology</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/doctors">Neurology</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/doctors">Urology</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/doctors">Gynecological</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/doctors">Pediatrical</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/doctors">Laboratory</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/doctors">Laboratory</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
                routerLink="/services" aria-expanded="false">Service</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Nephrologist Care</a></li>
-              <li><a class="dropdown-item" href="#">Eye Care</a></li>
-              <li><a class="dropdown-item" href="#">Pediatrician Clinic</a></li>
-              <li><a class="dropdown-item" href="#">Prenatal Care</a></li>
-              <li><a class="dropdown-item" href="#">Medical Counseling</a></li>
-              <li><a class="dropdown-item" href="#">Eldery Care</a></li>
-              <li><a class="dropdown-item" href="#">Competitive Doctors</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/services">Nephrologist Care</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/services">Eye Care</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/services">Pediatrician Clinic</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/services">Prenatal Care</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/services">Medical Counseling</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/services">Eldery Care</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/services">Competitive Doctors</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
                routerLink="/facilities" aria-expanded="false">Facility</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Room</a></li>
-              <li><a class="dropdown-item" href="#">Equipment</a></li>
-              <li><a class="dropdown-item" href="#">Medical Facility</a></li>
+              <li><a class="dropdown-item" routerLink="/room">Room</a></li>
+              <li><a class="dropdown-item" routerLink="/equipment">Equipment</a></li>
+              <li><a class="dropdown-item" routerLink="/infra">Infrastructure</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" routerLink="/aboutus">About</a>
+            <a class="nav-link active" aria-current="page" href="#" routerLink="/about-us">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" routerLink="/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" routerLink="/feedback">Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" routerLink="/helpdesk">Helpdesk</a>
-          </li>
-          <li class="nav-item dropdown show" >
-            <a class="nav-link dropdown-toggle active" href="#"
+          <li class="nav-item dropdown" >
+            <a href="#"class="nav-link dropdown-toggle active"
                data-bs-toggle="dropdown" aria-expanded="false">More</a>
-            <ul class="dropdown-menu show">
-              <li><a class="dropdown-item" href="#">Contact Us</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="">Appointment</a></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" routerLink="/contact">Contact</a></li>
               <li><a class="dropdown-item" href="#" routerLink="/feedback">Feedback</a></li>
               <li><a class="dropdown-item" href="#" routerLink="/helpdesk">Helpdesk</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Appointment</a></li>
             </ul>
           </li>
         </ul>
@@ -125,7 +116,7 @@
     <div class="row">
       <div class="col-md-5 offset-md-1 mb-3">
         <div class="footer-logo">
-          <img src="assets/images/footer-logo.png" width="70%">
+          <a routerLink="/home"><img src="assets/images/footer-logo.png" width="70%"></a>
         </div>
         <hr>
         <div class="footer-text">
@@ -136,7 +127,7 @@
         </div>
         <div class="social">
           <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a> </li>
+            <li class="social-btn"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
             <li><a href="#"><i class="fa-brands fa-skype"></i></a> </li>
             <li><a href="#"><i class="fa-solid fa-at"></i></a> </li>
@@ -148,11 +139,11 @@
         <h5>About Us</h5>
         <hr>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Introduction</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Department</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Doctor Team</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Service</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facility</a></li>
+          <li class="nav-item mb-2"><a routerLink="/about-us" class="nav-link p-0 text-muted">Introduction</a></li>
+          <li class="nav-item mb-2"><a routerLink="/department" class="nav-link p-0 text-muted">Department</a></li>
+          <li class="nav-item mb-2"><a routerLink="/doctors" class="nav-link p-0 text-muted">Doctor Team</a></li>
+          <li class="nav-item mb-2"><a routerLink="/services" class="nav-link p-0 text-muted">Service</a></li>
+          <li class="nav-item mb-2"><a routerLink="/facilities" class="nav-link p-0 text-muted">Facility</a></li>
         </ul>
       </div>
 
@@ -161,9 +152,9 @@
         <hr>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>No 8, My Dinh,Ha Noi</a>
+            <a routerLink="/contact"><i class="fa-sharp fa-solid fa-location-dot"></i>No 8, My Dinh,Ha Noi</a>
           </li>
-          <li class="nav-item mb-2"><a href="#"><i class="fa fa-phone fa-1x"></i>Customer Service</a>
+          <li class="nav-item mb-2"><a href="tel:098-808-0536"><i class="fa fa-phone fa-1x"></i>Customer Service</a>
           </li>
           <li class="nav-item mb-2"><a href="mailto:ch@gmail.com"><i class="fa-solid fa-at"></i>ch@gmail.com</a>
           </li>
