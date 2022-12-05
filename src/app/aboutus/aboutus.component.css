@@ -7,46 +7,75 @@
   box-sizing: border-box;
   background-color: #fff;
   font-family: Lato,sans-serif;
+  height: 2500px;
 }
 a {
   text-decoration: none;
 }
-.container{
-  width: 1090px;
-  height: 1000px;
-  margin: auto;
+.line1{
+  width: 100%;
+  height: 700px;
+  background-image: url("https://doctery-demo.pbminfotech.com/demo2/wp-content/uploads/sites/3/2020/11/bg-07.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
 }
 .top-img{
   margin-top: 100px;
   height: 350px;
   z-index: 1;
-  background: url("https://demo.voidcoders.com/htmldemo/medhelpV2/medhelp-center/assets/images/bg/breadcumb.jpg") center ;
+  background: url("https://doctery-demo.pbminfotech.com/demo2/wp-content/uploads/sites/3/2020/12/title-bg.jpg") center no-repeat ;
 }
-.top-img::before{
-  display: block;
-  background-color: #0c63e2;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: .7;
-  content: "";
-}
+/*.top-img::before{*/
+/*  display: block;*/
+/*  background-color: #0c63e2;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  z-index: -1;*/
+/*  opacity: .7;*/
+/*  content: "";*/
+/*}*/
 .img-text{
   position: absolute;
-  top: 300px;
-  margin-left: 220px;
-  color: white;
+  top: 330px;
+  margin-left: 100px;
+  color: black;
 }
 .text1{
   float: left;
   margin-top: 100px;
   width: 50%;
+  margin-left: 50px;
 }
 h2{
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Rajdhani,sans-serif;
   font-weight: 700;
-  color: #000
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -.8px;
+  color: #081839;
+  text-transform: none;
+  font-style: normal;
+
+}
+h5{
+  font-family: Rajdhani,sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -.8px;
+  color: #333333;
+  text-transform: none;
+  font-style: normal;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.introduction{
+  color: #1bbde4;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 p{
   margin-top: 20px;
@@ -57,6 +86,7 @@ p{
   color: #878787;
   line-height: 1.65;
 }
+
 .tick li{
   margin-top: 10px;
   font-family: 'Poppins', sans-serif;
@@ -77,20 +107,71 @@ p{
   margin-top: 100px;
   margin-left: 50px;
 }
-.img2{
-  float: left;
-  margin-top: 30px;
-}
+
 .img2 img{
-  width: 550px;
-  height: 355px;
+  float: left;
+  width: 730px;
+  height: 600px;
+
+}
+.img2{
+  margin-left: -100px;
+}
+.back-text2{
+  float: left;
+  width: 50%;
+  height:600px;
+  background-color: #081839 !important;
 }
 .text2{
-  float: left;
-  margin-top: 5px;
-  margin-left: 30px;
-  width: 40%;
+  margin-left: 70px;
+  margin-top: 100px;
+}
+.text2 p{
+  color: #1bbde4;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+h6{
+  color: #1bbde4;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.text2 h2{
+  font-family: Rajdhani,sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -.8px;
+  color: #fff;
+  text-transform: none;
+  font-style: normal;
+}
+.feature2{
+  width: 100%;
+  height: 700px;
+  background-image: url("https://doctery-demo.pbminfotech.com/demo2/wp-content/uploads/sites/3/2020/11/bg-03.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin-top: 600px;
 }
 .foot{
   margin-top: 0 !important;
+}
+.py-5 h2,h6{
+  text-align: center;
+}
+.text3{
+  margin-top: 120px;
+}
+.row{
+  margin-top: 70px;
+}
+i{
+  color: #1bbde4;
+  font-size: 30px;
 }
