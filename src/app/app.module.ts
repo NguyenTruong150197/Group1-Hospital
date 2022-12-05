@@ -9,6 +9,13 @@ import {DepartmentComponent} from "./department/department.component";
 import {AboutusComponent} from "./aboutus/aboutus.component";
 import {FacilitiesComponent} from "./facilities/facilities.component";
 import {ServicesComponent} from "./services/services.component";
+import {Services_1Component} from "./services_1/services_1.component";
+import {Services_2Component} from "./services_2/services_2.component";
+import {Services_3Component} from "./services_3/services_3.component";
+import {Services_4Component} from "./services_4/services_4.component";
+import {Services_5Component} from "./services_5/services_5.component";
+import {Services_6Component} from "./services_6/services_6.component";
+import {Services_7Component} from "./services_7/services_7.component";
 import { HomeComponent } from './home/home.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { HelpdeskComponent } from './helpdesk/helpdesk.component';
@@ -31,6 +38,13 @@ const appRoutes: Routes=[
   {path:'about-us',component: AboutusComponent},
   {path:'facilities',component: FacilitiesComponent},
   {path:'services',component: ServicesComponent},
+  {path:'services_1',component: Services_1Component},
+  {path:'services_2',component: Services_2Component},
+  {path:'services_3',component: Services_3Component},
+  {path:'services_4',component: Services_4Component},
+  {path:'services_5',component: Services_5Component},
+  {path:'services_6',component: Services_6Component},
+  {path:'services_7',component: Services_7Component},
   {path:'signup',component: SignUpComponent},
   {path:'registration',component: RegistrationComponent},
   {path:'feedback',component: FeedbackComponent},
@@ -50,6 +64,13 @@ const appRoutes: Routes=[
     AboutusComponent,
     FacilitiesComponent,
     ServicesComponent,
+    Services_1Component,
+    Services_2Component,
+    Services_3Component,
+    Services_4Component,
+    Services_5Component,
+    Services_6Component,
+    Services_7Component,
     HomeComponent,
     FeedbackComponent,
     HelpdeskComponent,
@@ -81,7 +102,7 @@ const appRoutes: Routes=[
     //   {path:'contact',component: ContactComponent},
     //   {path:'about-us',component: AboutusComponent},
     //   {path:'facilities',component: FacilitiesComponent},
-    //   {path:'services',component: ServicesComponent},
+    //   {path:'services',component: Services_1Component},
     //   {path:'infra',component: InfrastructureComponent},
     // ])
   ],
