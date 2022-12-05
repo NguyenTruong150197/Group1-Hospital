@@ -20,6 +20,8 @@ import { RoomComponent } from './room/room.component';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { RoomContentComponent } from './room-content/room-content.component';
 import { EquipmentComponent } from './equipment/equipment.component';
+import { FaqsComponent } from './faqs/faqs.component';
+import { AppRoutingModule } from './app-routing.module';
 const appRoutes: Routes=[
   {path:'',component: HomeComponent},
   {path:'doctors',component: DoctorsComponent},
@@ -57,11 +59,13 @@ const appRoutes: Routes=[
     RoomComponent,
     InfrastructureComponent,
     RoomContentComponent,
-    EquipmentComponent
+    EquipmentComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),   // cost: appRoutes,
+    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,   // cost: appRoutes,
     // RouterModule.forRoot([
     //   {path:'home',component: HomeComponent},
     //   {path:'',component: HomeComponent},

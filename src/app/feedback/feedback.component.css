@@ -15,8 +15,8 @@
 .client-feedback{
   margin: 0 0 2rem 0;
   padding: 1rem;
-  border: 1px solid gray;
-  box-shadow: 0 0 2px gray;
+  /*border: 1px solid #80808090;*/
+  box-shadow: 0 0 2px #80808090;
   /*border-radius: 0.5rem;*/
 }
 .client-info{
