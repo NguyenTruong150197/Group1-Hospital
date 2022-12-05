@@ -1,14 +1,4 @@
-#main{
-  margin: 0;
-  padding: 0;
-  float: left;
-  width: 100%;
-  line-height: 24px;
-  box-sizing: border-box;
-  background-color: #fff;
-  font-family: Lato,sans-serif;
-  height: 2500px;
-}
+
 a {
   text-decoration: none;
 }
@@ -20,8 +10,7 @@ a {
   background-repeat: no-repeat;
   margin-bottom: 70px;
 }
-.top-img{
-  margin-top: 100px;
+.banner{
   height: 350px;
   z-index: 1;
   background: url("https://doctery-demo.pbminfotech.com/demo2/wp-content/uploads/sites/3/2020/12/title-bg.jpg") center no-repeat ;
@@ -35,18 +24,8 @@ a {
 /*  opacity: .7;*/
 /*  content: "";*/
 /*}*/
-.img-text{
-  position: absolute;
-  top: 330px;
-  margin-left: 100px;
-  color: black;
-}
-.text1{
-  float: left;
-  margin-top: 100px;
-  width: 50%;
-  margin-left: 50px;
-}
+
+
 h2{
   font-family: Rajdhani,sans-serif;
   font-weight: 700;
@@ -56,7 +35,6 @@ h2{
   color: #081839;
   text-transform: none;
   font-style: normal;
-
 }
 h5{
   font-family: Rajdhani,sans-serif;
@@ -87,42 +65,21 @@ p{
   line-height: 1.65;
 }
 
-.tick li{
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-weight:550;
-  color: #878787;
-  list-style: none;
-}
-.tick li i{
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  padding-top: 12px;
-  margin-right: 10px;
-  font-size: 16px;
-}
-.img1{
-  float: left;
+h1{
   margin-top: 100px;
-  margin-left: 50px;
+  margin-left: 70px;
+  font-size: 50px;
 }
-
 .img2 img{
-  float: left;
-  width: 730px;
-  height: 600px;
-
+  width: 100%;
 }
 .img2{
-  margin-left: -100px;
+  padding: 0 !important;
 }
 .back-text2{
-  float: left;
-  width: 50%;
-  height:600px;
   background-color: #081839 !important;
 }
+
 .text2{
   margin-left: 70px;
   margin-top: 100px;
@@ -157,7 +114,6 @@ h6{
   background-image: url("https://doctery-demo.pbminfotech.com/demo2/wp-content/uploads/sites/3/2020/11/bg-03.png");
   background-position: top left;
   background-repeat: no-repeat;
-  margin-top: 600px;
 }
 .foot{
   margin-top: 0 !important;
@@ -166,9 +122,6 @@ h6{
   text-align: center;
 }
 .text3{
-  margin-top: 120px;
-}
-.row{
   margin-top: 70px;
 }
 i{
