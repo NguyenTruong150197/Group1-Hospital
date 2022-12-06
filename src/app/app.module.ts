@@ -30,6 +30,7 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TimetableComponent } from './timetable/timetable.component';
+import {AppointmentComponent} from "./appointment/appointment.component";
 const appRoutes: Routes=[
   {path:'',component: HomeComponent},
   {path:'doctors',component: DoctorsComponent},
@@ -53,6 +54,7 @@ const appRoutes: Routes=[
   {path:'room',component: RoomComponent},
   {path:'equipment',component: EquipmentComponent},
   {path:'infra',component: InfrastructureComponent},
+  {path:'appointment',component: AppointmentComponent},
 
 ]
 @NgModule({
@@ -83,7 +85,8 @@ const appRoutes: Routes=[
     RoomContentComponent,
     EquipmentComponent,
     FaqsComponent,
-    TimetableComponent
+    TimetableComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
