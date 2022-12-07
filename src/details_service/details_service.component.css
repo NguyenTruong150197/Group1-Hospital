@@ -1,5 +1,6 @@
 img{
-  width: 100%;
+  width: 70%;
+  margin-bottom: 10px;
 }
 
 
@@ -145,5 +146,5 @@ img{
   font-family: Lucida Console,sans-serif;
 }
 .name_service{
-  color: rgba(33, 41, 192, 0.66);
+  color: rgb(0, 0, 0);
 }

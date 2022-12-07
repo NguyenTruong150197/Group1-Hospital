@@ -2,89 +2,23 @@
   <div class="container mt-md-5 mb-md-5">
     <h2 class="title">Our Chief Doctors</h2>
     <div class="our chief doctors row justify-content-around">
-      <div class="items col-md-6">
+      <div class="items col-md-6" *ngFor="let n of doctor">
         <div class="image">
-          <img width="110" height="110" src="https://dtsoulmedic.wpenginepowered.com/wp-content/uploads/2013/11/team2.jpg">
+          <img width="110" height="110" src="./assets/{{n.img}}">
         </div>
         <div class="details">
           <h4>
             <i class="fa fa-user-md"></i>
-            <span class="name">David James,<span style="color: grey"> S001</span></span>
+            <span class="name">{{n.name}},<span style="color: grey"> {{n.namep}}</span></span>
           </h4>
-          <p class="intro-area">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.</p>
+          <p class="intro-area">{{n.description}}</p>
           <hr>
-          <h5>Department: <i>Laboratory Analysis</i></h5>
+          <p class="email">Department: <i>{{n.namec}}</i></p>
           <p class="email">
-            Email : <a href="#">yourname@domain.com</a>
+            Phone : <a href="#">{{n.phone}}</a>
           </p>
-          <ul>
-            <li><a class="fa fa-twitter" href="#" title="Twitter"></a></li>
-            <li><a class="fa fa-facebook" href="#" title="Facebook"></a></li>
-            <li><a class="fa fa-google" href="#" title="Google"></a></li>
-            <li><a class="fa fa-linkedin" href="#" title="Linkedin"></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="items col-md-6">
-        <div class="image">
-          <img width="110" height="110" src="https://dtsoulmedic.wpenginepowered.com/wp-content/uploads/2013/11/team2.jpg">
-        </div>
-        <div class="details">
-          <h4>
-            <i class="fa fa-user-md"></i>
-            <span class="name">David James,<span style="color: grey"> S001</span></span>
-          </h4>
-          <p class="intro-area">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.</p>
-          <hr>
-          <h5>Department: <i>Laboratory Analysis</i></h5>
           <p class="email">
-            Email : <a href="#">yourname@domain.com</a>
-          </p>
-          <ul>
-            <li><a class="fa fa-twitter" href="#" title="Twitter"></a></li>
-            <li><a class="fa fa-facebook" href="#" title="Facebook"></a></li>
-            <li><a class="fa fa-google" href="#" title="Google"></a></li>
-            <li><a class="fa fa-linkedin" href="#" title="Linkedin"></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="items col-md-6">
-        <div class="image">
-          <img width="110" height="110" src="https://dtsoulmedic.wpenginepowered.com/wp-content/uploads/2013/11/team2.jpg">
-        </div>
-        <div class="details">
-          <h4>
-            <i class="fa fa-user-md"></i>
-            <span class="name">David James,<span style="color: grey"> S001</span></span>
-          </h4>
-          <p class="intro-area">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.</p>
-          <hr>
-          <h5>Department: <i>Laboratory Analysis</i></h5>
-          <p class="email">
-            Email : <a href="#">yourname@domain.com</a>
-          </p>
-          <ul>
-            <li><a class="fa fa-twitter" href="#" title="Twitter"></a></li>
-            <li><a class="fa fa-facebook" href="#" title="Facebook"></a></li>
-            <li><a class="fa fa-google" href="#" title="Google"></a></li>
-            <li><a class="fa fa-linkedin" href="#" title="Linkedin"></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="items col-md-6">
-        <div class="image">
-          <img width="110" height="110" src="https://dtsoulmedic.wpenginepowered.com/wp-content/uploads/2013/11/team2.jpg">
-        </div>
-        <div class="details">
-          <h4>
-            <i class="fa fa-user-md"></i>
-            <span class="name">David James,<span style="color: grey"> S001</span></span>
-          </h4>
-          <p class="intro-area">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.</p>
-          <hr>
-          <h5>Department: <i>Laboratory Analysis</i></h5>
-          <p class="email">
-            Email : <a href="#">yourname@domain.com</a>
+            Email : <a href="#">{{n.email}}</a>
           </p>
           <ul>
             <li><a class="fa fa-twitter" href="#" title="Twitter"></a></li>
@@ -96,142 +30,5 @@
       </div>
     </div>
     <hr class="hr" style="width: 100%;margin: 0 0 60px">
-
-    <h2 class="title">Our Doctors</h2>
-    <div class="our doctors row">
-      <div class="items col-md-6">
-        <div class="image">
-          <img width="110" height="110" src="https://dtsoulmedic.wpenginepowered.com/wp-content/uploads/2013/11/team2.jpg">
-        </div>
-        <div class="details">
-          <h4>
-            <i class="fa fa-user-md"></i>
-            <span class="name">David James,<span style="color: grey"> S001</span></span>
-          </h4>
-          <p class="intro-area">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.</p>
-          <hr>
-          <h5>Department: <i>Laboratory Analysis</i></h5>
-          <p class="email">
-            Email : <a href="#">yourname@domain.com</a>
-          </p>
-          <ul>
-            <li><a class="fa fa-twitter" href="#" title="Twitter"></a></li>
-            <li><a class="fa fa-facebook" href="#" title="Facebook"></a></li>
-            <li><a class="fa fa-google" href="#" title="Google"></a></li>
-            <li><a class="fa fa-linkedin" href="#" title="Linkedin"></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="items col-md-6">
-        <div class="image">
-          <img width="110" height="110" src="https://dtsoulmedic.wpenginepowered.com/wp-content/uploads/2013/11/team2.jpg">
-        </div>
-        <div class="details">
-          <h4>
-            <i class="fa fa-user-md"></i>
-            <span class="name">David James,<span style="color: grey"> S001</span></span>
-          </h4>
-          <p class="intro-area">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd pamade eleifend sapien.</p>
-          <hr>
-          <h5>Department: <i>Laboratory Analysis</i></h5>
-          <p class="email">
-            Email : <a href="#">yourname@domain.com</a>
-          </p>
-          <ul>
-            <li><a class="fa fa-twitter" href="#" title="Twitter"></a></li>
-            <li><a class="fa fa-facebook" href="#" title="Facebook"></a></li>
-            <li><a class="fa fa-google" href="#" title="Google"></a></li>
-            <li><a class="fa fa-linkedin" href="#" title="Linkedin"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr class="hr" style="width: 100%;margin: 0 0 60px">
-
-    <h2 class="title">Physicians List</h2>
-    <div class="physicians list">
-      <table class="table table-striped">
-        <thead>
-        <tr>
-          <th scope="col">DOCTORS NAME</th>
-          <th scope="col">CODE</th>
-          <th scope="col">DEPARTMENT</th>
-          <th scope="col">APPOINTMENT</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#"> James Horner</a></i></td>
-          <td>S001</td>
-          <td>Blood Bank</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#">  Steve Bucami</a></i></td>
-          <td>S002</td>
-          <td>Nephrology</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#">  David James</a></i></td>
-          <td>S003</td>
-          <td>Ophthalmology</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#">  Mc Horner</a></i></td>
-          <td>S004</td>
-          <td>Oncology</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#"> Lewis James Stefen</a></i></td>
-          <td>S005</td>
-          <td>Anaesthetist Cardiac</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#"> Carrie Holmes</a></i></td>
-          <td>S006</td>
-          <td>Cardio Thoracic</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#"> James Gandolfini</a></i></td>
-          <td>S007</td>
-          <td>Gynaecology</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-md"><a href="#"> David James</a></i></td>
-          <td>S008</td>
-          <td>Blood Bank</td>
-          <td>
-            <button type="button" class="btn btn-outline-primary btn-sm">BOOK AN APPOINTMENT</button>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="bd-callout bd-callout-info">
-      <h4>OUR TECHNOLOGICAL SERVICES HAS BEEN IMPROVED VASTLY</h4>
-      For more information, please click here !
-      <button type="button" class="btn btn-outline-primary btn-group-lg">SERVICE NOW</button>
-    </div>
   </div>
 </div>

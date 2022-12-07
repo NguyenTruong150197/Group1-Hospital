@@ -1,0 +1,147 @@
+<section class="section department">
+  <div id="main">
+    <div class="container">
+      <div class="row mt-md-5 mb-md-5">
+
+        <div class="col-md-3">
+          <div class="sidebar">
+            <aside class="widget" style="background-color: #4bbcd7">
+              <h3 class="widget__title">Our Departments</h3>
+              <ul>
+                <li *ngFor="let n of centre">
+                  <a href="#" routerLink="/details/{{n.id}}" onclick="setTimeout ( 'location.reload()', 1 );">{{n.name}}</a>
+                  <hr class="hr0">
+                </li>
+              </ul>
+            </aside>
+            <aside class="widget" style="background-color: #4bbcd7">
+              <h3 class="widget__title">Opening Hours</h3>
+              <ul>
+                <li>
+                  Monday-Friday:
+                  <span class="-align-right">8.00-17.00</span>
+                  <hr class="hr0">
+                </li>
+                <li>
+                  Saturday:
+                  <span class="-align-right">9.30-18.30</span>
+                  <hr class="hr0">
+                </li>
+                <li>
+                  Sunday:
+                  <span class="-align-right">9.30-18.30</span>
+                  <hr class="hr0">
+                </li>
+              </ul>
+            </aside>
+            <aside class="widget" style="background-color: #4bbcd7">
+              <h3 class="widget__title">Contacts</h3>
+              <ul>
+                <li>
+                  <span class="icon fa fa-map-marker" style="padding-right: 8px"></span>
+                  227 Marion Street
+                  <hr class="hr0">
+                </li>
+                <li>
+                  <span class="icon fa fa-envelope"></span>
+                  medical-clinic@mail.com
+                  <hr class="hr0">
+                </li>
+                <li>
+                  <span class="icon fa fa-phone"></span>
+                  1-888-333-444-222
+                  <hr class="hr0">
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="content">
+            <div class="introduction" *ngFor="let m of product">
+              <h2 class="content__title">{{m.name}}</h2>
+              <p>{{m.description}}</p>
+            </div>
+            <hr class="hr1" style="width: 100%">
+
+            <div class="intro_doctors">
+              <h2 class="content__title">Awesome Doctors for Medical and Health</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuм adipiscing elit</p>
+              <div class="profile_doctors row justify-content-around">
+
+                <div class="profile_doctors_column col-md-3 border" *ngFor="let a of doctor">
+                  <a href="#"><img src="./assets/{{a.img}}"></a>
+                  <div class="heading">
+                    <h3><a href="#">{{a.name}}</a></h3>
+                  </div>
+                  <hr class="hr4">
+                  <p>{{a.namep}}</p>
+                  <hr class="hr4">
+                  <ul>
+                    <li>
+                      <i class="doctor__icon fa fa-phone"></i>
+                      <span style="color: #808080;"> {{a.phone}}</span>
+                    </li>
+                    <li>
+                      <i class="doctor__icon fa fa-envelope"></i>
+                      <span style="color: #808080;"> {{a.email}}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="hr1" style="width: 100%">
+
+            <div class="appointments">
+              <h2 class="content__title">Book an Appointment</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuм adipiscing elit</p>
+
+              <form method="get" action="" class="row need-validation">
+                <div class="form__col col-md-6">
+                  <select name="menu" class="select col-md-12" aria-invalid="false" required>
+                    <option value="Select doctor">Select Doctor</option>
+                  </select>
+                  <input type="text" name="your-name" value="" size="40" class="form-text col-md-12" aria-invalid="false" placeholder="Your Name" required>
+                  <input type="text" name="your-email" value="" size="40" class="form-text col-md-12" aria-invalid="false" placeholder="Your Email" required>
+                </div>
+
+                <div class="form__col col-md-6">
+                  <select name="menu" class="select col-md-12" aria-invalid="false" required>
+                    <option value="Select Time">Select Time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 AM">12:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                  </select>
+                  <input type="tel" name="phone" value="" size="40" class="tel col-md-12" aria-invalid="false" placeholder="Phone" required>
+                  <input type="date" name="date" value="2017-01-02" class="date col-md-12" min="2016-01-01" max="2025-01-01" aria-required="true" aria-invalid="false" required>
+                </div>
+
+                <div class="form__cmt col-md-12">
+                  <textarea name="your-message" cols="119" rows="6" class="textarea" aria-invalid="false" placeholder="">Message:</textarea>
+                </div>
+
+                <button class="form__bottom col-md-3" href="#" type="submit">
+                  Make an Appointment
+                </button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+

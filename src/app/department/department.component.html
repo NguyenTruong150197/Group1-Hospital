@@ -8,36 +8,8 @@
           <aside class="widget" style="background-color: #4bbcd7">
             <h3 class="widget__title">Our Departments</h3>
             <ul>
-              <li>
-                <a href="#">Laboratory Analysis</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Pediatric Clinic</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Laryngological Clinic</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Outpatient Rehabilitation</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Gynaecological Clinic</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Laboratory Analysis</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Laboratory Analysis</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Laboratory Analysis</a>
+              <li *ngFor="let n of centre">
+                <a href="#" routerLink="/details/{{n.id}}">{{n.name}}</a>
                 <hr class="hr0">
               </li>
             </ul>
@@ -89,116 +61,8 @@
         <div class="content">
           <div class="introduction">
             <img src="https://medical-clinic.cmsmasters.net/wp-content/uploads/2015/01/1-2.jpg">
-            <h2 class="content__title">Outpatient Surgery</h2>
+            <h2 class="content__title">Our Departments</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum massa vel enim feugiat gravida. Phasellus velit risus, euismod a lacus et, mattis condimentum augue. Vivamus fermentum ex quis imperdiet sodales. Sed aliquam nibh tellus, a rutrum turpis pellentesque ac. Nulla nibh libero, tincidunt cursus gravida ut, sodales ut magna. Sed sodales libero sapien, et rutrum mi placerat eget. Nulla vestibulum lacus vel eros eleifend molestie. Cras dapibus ullamcorper dictum. Vivamus nec erat placerat felis scelerisque porttitor in ac turpis. In nec imperdiet turpis. Suspendisse quis orci ut orci pulvinar eleifend. Nulla eu mattis ipsum. Integer eget sagittis nulla. Praesent consectetur lacus et maximus eleifend. Integer non lacus dui. Mauris tortor diam, laoreet quis commodo vitae, sodales vel augue.</p>
-          </div>
-          <hr class="hr1" style="width: 100%">
-
-          <div class="price row">
-            <div class="price__col col-md-4">
-              <h3 class="price__title">Investigations</h3>
-              <hr class="hr2" style="width: 20%;background-color: #4bbcd7;border: 1px solid #4bbcd7;">
-              <ul>
-                <li>Colonoscopy - $105</li>
-                <li>Gastroscopy - $225</li>
-                <li>Allergy testing - $335</li>
-                <li>Colonoscopy - $295</li>
-                <li>Gastroscopy - $295</li>
-                <li>Allergy testing - $355</li>
-              </ul>
-            </div>
-            <div class="price__col col-md-4">
-              <h3 class="price__title">Treatments</h3>
-              <hr class="hr2" style="width: 20%;background-color: #0e72c7;border: 1px solid #0e72c7;">
-              <ul>
-                <li>Colonoscopy - $105</li>
-                <li>Gastroscopy - $225</li>
-                <li>Allergy testing - $335</li>
-                <li>Colonoscopy - $295</li>
-                <li>Gastroscopy - $295</li>
-                <li>Allergy testing - $355</li>
-              </ul>
-            </div>
-            <div class="price__col col-md-4">
-              <h3 class="price__title">Our Services</h3>
-              <hr class="hr2" style="width: 20%;background-color: #0e72c7;border: 1px solid #0e72c7;">
-              <ul>
-                <li>Colonoscopy - $105</li>
-                <li>Gastroscopy - $225</li>
-                <li>Allergy testing - $335</li>
-                <li>Colonoscopy - $295</li>
-                <li>Gastroscopy - $295</li>
-                <li>Allergy testing - $355</li>
-              </ul>
-            </div>
-          </div>
-          <hr class="hr1" style="width: 100%">
-
-          <div class="intro_doctors">
-            <h2 class="content__title">Awesome Doctors for Medical and Health</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuм adipiscing elit</p>
-            <div class="profile_doctors row justify-content-around">
-              <div class="profile_doctors_column col-md-3 border">
-                <a href="#"><img src="https://medical-clinic.cmsmasters.net/wp-content/uploads/2015/04/1-1.jpg"></a>
-                <div class="heading">
-                  <h3><a href="#">Dr.Julia Jameson</a></h3>
-                  <h6>Pediatrist</h6>
-                </div>
-                <hr class="hr4">
-                <p>Cum sociis natoque penatibus et magnis dis parturient.</p>
-                <hr class="hr4">
-                <ul>
-                  <li>
-                    <i class="doctor__icon fa fa-phone"></i>
-                    <span style="color: #808080;"> +1-212-555-7575</span>
-                  </li>
-                  <li>
-                    <i class="doctor__icon fa fa-envelope"></i>
-                    <span style="color: #808080;"> example123@gmail.com</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="profile_doctors_column col-md-3 border">
-                <a href="#"><img src="https://medical-clinic.cmsmasters.net/wp-content/uploads/2015/04/1-1.jpg"></a>
-                <div class="heading">
-                  <h3><a href="#">Dr.Julia Jameson</a></h3>
-                  <h6>Pediatrist</h6>
-                </div>
-                <hr class="hr4">
-                <p>Cum sociis natoque penatibus et magnis dis parturient.</p>
-                <hr class="hr4">
-                <ul>
-                  <li>
-                    <i class="doctor__icon fa fa-phone"></i>
-                    <span style="color: #808080;"> +1-212-555-7575</span>
-                  </li>
-                  <li>
-                    <i class="doctor__icon fa fa-envelope"></i>
-                    <span style="color: #808080;"> example123@gmail.com</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="profile_doctors_column col-md-3 border">
-                <a href="#"><img src="https://medical-clinic.cmsmasters.net/wp-content/uploads/2015/04/1-1.jpg"></a>
-                <div class="heading">
-                  <h3><a href="#">Dr.Julia Jameson</a></h3>
-                  <h6>Pediatrist</h6>
-                </div>
-                <hr class="hr4">
-                <p>Cum sociis natoque penatibus et magnis dis parturient.</p>
-                <hr class="hr4">
-                <ul>
-                  <li>
-                    <i class="doctor__icon fa fa-phone"></i>
-                    <span style="color: #808080;"> +1-212-555-7575</span>
-                  </li>
-                  <li>
-                    <i class="doctor__icon fa fa-envelope"></i>
-                    <span style="color: #808080;"> example123@gmail.com</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
           <hr class="hr1" style="width: 100%">
 
@@ -210,11 +74,6 @@
               <div class="form__col col-md-6">
                 <select name="menu" class="select col-md-12" aria-invalid="false" required>
                   <option value="Select doctor">Select Doctor</option>
-                  <option value="Dr. Nick Sims">Dr. Nick Sims</option>
-                  <option value="Dr. Michael Linden">Dr. Michael Linden</option>
-                  <option value="Dr. Max Turner">Dr. Max Turner</option>
-                  <option value="Dr. Amy Adams">Dr. Amy Adams</option>
-                  <option value="Dr. Julia Jameson">Dr. Julia Jameson</option>
                 </select>
                 <input type="text" name="your-name" value="" size="40" class="form-text col-md-12" aria-invalid="false" placeholder="Your Name" required>
                 <input type="text" name="your-email" value="" size="40" class="form-text col-md-12" aria-invalid="false" placeholder="Your Email" required>

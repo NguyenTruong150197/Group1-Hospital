@@ -15,38 +15,12 @@
           </aside>
           <aside class="widget" style="background-color: #4bbcd7">
             <h3 class="widget__title">Category</h3>
-            <ul>
+            <ul *ngFor="let a of service">
               <li>
-                <a href="#">Eldery Care</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Health</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Medical Treatments</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Private Duty Nursing</a>
-                <hr class="hr0">
-              </li>
-              <li>
-                <a href="#">Ambulance Car</a>
+                <a href="http://localhost:4200/details_service/{{a.id}}">{{a.name}}</a>
                 <hr class="hr0">
               </li>
             </ul>
-          </aside>
-          <aside class="widget" style="background-color: #4bbcd7">
-            <h3 class="widget__title">Tags</h3>
-            <div class="tag-cloud">
-              <a href="#" class="tag-cloud-link" aria-label="care (13 items)">CARE</a>
-              <a href="#" class="tag-cloud-link" aria-label="healthy (7 items)">HEALTHY</a>
-              <a href="#" class="tag-cloud-link" aria-label="medical (9 items)">MEDICAL</a>
-              <a href="#" class="tag-cloud-link" aria-label="tips (7 items)">TIPS</a>
-              <a href="#" class="tag-cloud-link" aria-label="medical center (4 items)">MEDICAL CENTER</a>
-            </div>
           </aside>
         </div>
       </div>
@@ -56,6 +30,11 @@
           <div class="introduction">
             <img src="https://pathwell.axiomthemes.com/wp-content/uploads/2017/10/services-5-copyright-1170x658.jpg">
             <p class="intro_p">Lorem ipsum dolor sit amet, ea pri meis accusam. Et vis accusam rationibus liberavisse, an vix viderer admodum. Atqui docendi omittam ei has, liber constituam id vim. Eam in dico doming definiebas. Cum munere impetus et. Ne nam simul oblique alterum, pri solet omnium id, usu an munere.</p>
+            <div>
+              <h3 class="name_service"></h3>
+              <p></p>
+              <hr class="hr" style="width: 100%;margin: 0 0 60px">
+            </div>
             <h5>I must explain to you how all this mistaken</h5>
             <div class="content__main row">
               <div class="col-md-6">

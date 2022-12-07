@@ -98,3 +98,9 @@ textarea:focus{
 .page-number{
   padding: 0;
 }
+.div-2-container{
+  text-align: center;
+  margin-bottom: 30px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
