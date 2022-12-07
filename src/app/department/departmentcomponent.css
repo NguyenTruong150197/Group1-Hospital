@@ -12,7 +12,7 @@
 .widget{
   padding: 30px 20px 40px;
   margin-bottom: 2px;
-  color: #ffffff;
+  color: #fff;
 }
 .widget__title{
   margin: 0 0 30px 30px;
@@ -21,7 +21,7 @@
   list-style: none;
 }
 .widget li a{
-  color: #ffffff;
+  color: #fff;
 }
 .hr0{
   width: 90%;
@@ -38,7 +38,7 @@
   width: 100%;
 }
 .content__title{
-  color: #212529;
+  color: #333;
   margin: 30px 0;
 }
 .introduction p{
@@ -50,7 +50,7 @@
   margin: 30px 0;
 }
 .price__title{
-  color: #212529;
+  color: #333;
   font-size: 18px;
   margin: 0;
 }
@@ -83,13 +83,13 @@
   transform: scale(1.05);
 }
 .heading h3{
-  color: #212529;
+  color: #333;
   font-size: 20px;
   margin: 20px 20px 10px;
   cursor: pointer;
 }
-.heading h3:hover{
-  color: #4bbcd7;
+.heading h3 a{
+  color: #3065b5;
 }
 .heading h6{
   color: rgba(33,37,41,0.8);
@@ -107,62 +107,62 @@
   margin-left: 20px;
 }
 .doctor__icon{
-  color: #4bbcd7;
+  color: #3065b5;
   margin-right: 5px;
 }
-.appointments p{
-  padding-bottom: 10px;
-}
-.form__col{
-  color: #808080;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.select{
-  margin-bottom: 20px;
-  color: #808080;
-  height: 40px;
-  padding-left: 10px;
-  font-size: 16px;
-}
-.form-text{
-  margin-bottom: 20px;
-  height: 40px;
-  padding-left: 10px;
-  font-size: 16px;
-}
-.tel{
-  margin-top: 4px;
-  margin-bottom: 20px;
-  height: 40px;
-  padding-left: 10px;
-  font-size: 16px;
-}
-.date{
-  margin-top: 4px;
-  margin-bottom: 20px;
-  height: 40px;
-  color: #808080;
-  padding-left: 10px;
-  font-size: 16px;
-}
-.textarea{
-  color: #808080;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
-.form__bottom{
-  padding: 0;
-  height: 50px;
-  margin: 30px 0 50px 10px;
-  font-size: 18px;
-  background-color: #ffffff;
-  color: #212529;
-  border: 1px solid #808080;
-}
-.form__bottom:hover{
-  background-color: #4bbcd7;
-  color: #ffffff;
-  transition: ease .1s;
-}
+/*.appointments p{*/
+/*  padding-bottom: 10px;*/
+/*}*/
+/*.form__col{*/
+/*  color: #808080;*/
+/*  font-size: 14px;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+/*.select{*/
+/*  margin-bottom: 20px;*/
+/*  color: #808080;*/
+/*  height: 40px;*/
+/*  padding-left: 10px;*/
+/*  font-size: 16px;*/
+/*}*/
+/*.form-text{*/
+/*  margin-bottom: 20px;*/
+/*  height: 40px;*/
+/*  padding-left: 10px;*/
+/*  font-size: 16px;*/
+/*}*/
+/*.tel{*/
+/*  margin-top: 4px;*/
+/*  margin-bottom: 20px;*/
+/*  height: 40px;*/
+/*  padding-left: 10px;*/
+/*  font-size: 16px;*/
+/*}*/
+/*.date{*/
+/*  margin-top: 4px;*/
+/*  margin-bottom: 20px;*/
+/*  height: 40px;*/
+/*  color: #808080;*/
+/*  padding-left: 10px;*/
+/*  font-size: 16px;*/
+/*}*/
+/*.textarea{*/
+/*  color: #808080;*/
+/*  font-size: 16px;*/
+/*  padding: 10px;*/
+/*  width: 100%;*/
+/*}*/
+/*.form__bottom{*/
+/*  padding: 0;*/
+/*  height: 50px;*/
+/*  margin: 30px 0 50px 10px;*/
+/*  font-size: 18px;*/
+/*  background-color: #ffffff;*/
+/*  color: #212529;*/
+/*  border: 1px solid #808080;*/
+/*}*/
+/*.form__bottom:hover{*/
+/*  background-color: #4bbcd7;*/
+/*  color: #ffffff;*/
+/*  transition: ease .1s;*/
+/*}*/
