@@ -28,8 +28,6 @@ const routes: Routes = [
   {path:'appointment',component: AppointmentComponent},
 
 
-
-
   {path:'room',component: RoomComponent,
     children:[
       {path: 'room-content', component: RoomContentComponent}

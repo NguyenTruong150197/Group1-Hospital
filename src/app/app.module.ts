@@ -31,6 +31,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {DetailsComponent} from "../details/details.component";
 import {Details_serviceComponent} from "../details_service/details_service.component";
 import {FaqsComponent} from "./faqs/faqs.component";
+import {AppRoutingModule} from "./app-routing.module";
 const appRoutes: Routes=[
   {path:'',component: HomeComponent},
   {path:'doctors',component: DoctorsComponent},
@@ -92,22 +93,23 @@ const appRoutes: Routes=[
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),   // cost: appRoutes,
-    // RouterModule.forRoot([
-    //   {path:'home',component: HomeComponent},
-    //   {path:'',component: HomeComponent},
-    //   {path:'signup',component: SignUpComponent},
-    //   {path:'registration',component: RegistrationComponent},
-    //   {path:'feedback',component: FeedbackComponent},
-    //   {path:'helpdesk',component: HelpdeskComponent},
-    //   {path:'**',component: PageNotFoundComponent},
-    //   {path:'doctors',component: DoctorsComponent},
-    //   {path:'department',component: DepartmentComponent},
-    //   {path:'contact',component: ContactComponent},
-    //   {path:'about-us',component: AboutusComponent},
-    //   {path:'facilities',component: FacilitiesComponent},
-    //   {path:'services',component: Services_1Component},
-    //   {path:'infra',component: InfrastructureComponent},
-    // ])
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path:'home',component: HomeComponent},
+      {path:'',component: HomeComponent},
+      {path:'signup',component: SignUpComponent},
+      {path:'registration',component: RegistrationComponent},
+      {path:'feedback',component: FeedbackComponent},
+      {path:'helpdesk',component: HelpdeskComponent},
+      {path:'**',component: PageNotFoundComponent},
+      {path:'doctors',component: DoctorsComponent},
+      {path:'department',component: DepartmentComponent},
+      {path:'contact',component: ContactComponent},
+      {path:'about-us',component: AboutusComponent},
+      {path:'facilities',component: FacilitiesComponent},
+      {path:'services',component: Services_1Component},
+      {path:'infra',component: InfrastructureComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
