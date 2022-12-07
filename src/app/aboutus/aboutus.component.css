@@ -110,7 +110,7 @@ h6{
 }
 .feature2{
   width: 100%;
-  height: 700px;
+  height: 550px;
   background-image: url("https://doctery-demo.pbminfotech.com/demo2/wp-content/uploads/sites/3/2020/11/bg-03.png");
   background-position: top left;
   background-repeat: no-repeat;
@@ -122,9 +122,13 @@ h6{
   text-align: center;
 }
 .text3{
-  margin-top: 70px;
+  margin-top: 50px;
 }
+
 i{
   color: #1bbde4;
   font-size: 30px;
+}
+.pb-2{
+  margin-bottom: 50px;
 }
