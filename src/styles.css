@@ -7,13 +7,7 @@ a{
   text-decoration: none;
   color: #3065b5;
 }
-/*.top{*/
-/*  position: fixed; !* Set the navbar to fixed position *!*/
-/*  top: 0; !* Position the navbar at the top of the page *!*/
-/*  width: 100%; !* Full width *!*/
-/*  background-color: white;*/
-/*  z-index: 1;*/
-/*}*/
+
 .top ul{
   list-style-type: none;
   margin: 0;
@@ -49,14 +43,22 @@ top-left{
   height: 5.5rem;
   font-size: 1.2rem;
 }
-/*.navbar {*/
-/*  !*overflow: hidden;*!*/
-/*  !*background-color: #333;*!*/
-/*  position: fixed; !* Set the navbar to fixed position *!*/
-/*  top: 24px; !* Position the navbar at the top of the page *!*/
-/*  width: 100%; !* Full width *!*/
-/*  z-index: 1;*/
-/*}*/
+
+.top{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: white;
+  z-index: 1;
+}
+.navbar {
+  /*overflow: hidden;*/
+  /*background-color: #333;*/
+  position: fixed; /* Set the navbar to fixed position */
+  top: 24px; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
 
 .space-home-logo{
   margin-left: 120px;
@@ -92,6 +94,11 @@ top-left{
 }
 .navbar ul li:hover ul{
   display: block;
+}
+
+
+.main{
+  margin-top: 112px;
 }
 
 
