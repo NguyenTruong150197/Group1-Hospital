@@ -1,6 +1,18 @@
-.infra-content{
-  padding: 3rem 0 3rem 0;
+h1{
+  margin-top: 2rem;
 }
-.col-7 img{
+.infra-content{
+  padding: 1rem 0 3rem 1rem;
+}
+.img1 img{
   width: 100%;
+}
+.img1{
+  padding: 5rem 0 3rem 0;
+}
+.img2 img{
+  width: 100%;
+}
+.img2{
+  padding: 6rem 0 3rem 3rem;
 }

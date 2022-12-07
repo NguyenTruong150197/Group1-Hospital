@@ -38,11 +38,11 @@ top-left{
 }
 .navbar {
   background-color: #3065b5;
-  height: 5rem;
-  font-size: 1.1rem;
+  height: 5.5rem;
+  font-size: 1.2rem;
 }
 .space-home-logo{
-  margin-left: 140px;
+  margin-left: 120px;
 }
 .banner img{
   display: block;
@@ -50,7 +50,8 @@ top-left{
   width: 100%;
 }
 .navbar-brand{
-  font-size: 2.3rem;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 .nav-search{
   background-color: white;

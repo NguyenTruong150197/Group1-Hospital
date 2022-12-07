@@ -143,3 +143,7 @@ ul{
 .three-feature{
   padding: 0 5rem;
 }
+
+.btn-doctor:hover{
+  transform: none !important;
+}
