@@ -21,7 +21,7 @@
 <section class="logo-nav section">
   <nav class="navbar navbar-expand-md navbar-dark" >
     <div class="container">
-      <img class="navbar-brand" src="assets/images/logo.png" width="55px">
+      <img class="navbar-brand" src="assets/images/logo.png" width="60px">
       <a class="navbar-brand" routerLink="/home" href="/home">Cambridge Hospital</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
               aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,29 +36,18 @@
             <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
                aria-expanded="false" routerLink="/department">Department</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" routerLink="/department" href="#">Cardiology</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/department">Neurology</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/department">Urology</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/department">Gynecological</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/department">Pediatrical</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/department">Laboratory</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/department">Laboratory</a></li>
+              <li *ngFor="let n of centre"><a class="dropdown-item" routerLink="/details/{{n.id}}" href="#" onclick="setTimeout ( 'location.reload()', 1 );">{{n.name}}</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/doctors">Doctor</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="#" data-bs-toggle="dropdown"
+               aria-expanded="false" routerLink="/doctors">Doctor</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
                routerLink="/services" aria-expanded="false">Service</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" routerLink="/services">Nephrologist Care</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/services">Eye Care</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/services">Pediatrician Clinic</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/services">Prenatal Care</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/services">Medical Counseling</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/services">Eldery Care</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/services">Competitive Doctors</a></li>
+              <li *ngFor="let m of service"><a class="dropdown-item" href="/details_service/{{m.id}}">{{m.name}}</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -80,7 +69,7 @@
               <li><a class="dropdown-item" href="#" routerLink="/contact">Contact</a></li>
               <li><a class="dropdown-item" href="#" routerLink="/feedback">Feedback</a></li>
               <li><a class="dropdown-item" href="#" routerLink="/helpdesk">Helpdesk</a></li>
-              <li><a class="dropdown-item" href="#" routerLink="/appointment">Appointment</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/department">Appointment</a></li>
             </ul>
           </li>
         </ul>
@@ -99,7 +88,9 @@
   </nav>
 </section>
 
+<section class="section main">
 <router-outlet></router-outlet>
+</section>
 
 <footer class="py-5 foot">
   <div class="container">

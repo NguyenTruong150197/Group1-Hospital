@@ -1,0 +1,51 @@
+<div id="main">
+  <div class="container">
+    <div class="row mt-md-5 mb-md-5">
+
+      <div class="col-md-3">
+        <div class="sidebar">
+          <aside class="widget" style="background-color: #4bbcd7">
+            <h3 class="widget__title">Search</h3>
+            <div class="box">
+              <div class="container-3">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" id="search" placeholder="Search..." />
+              </div>
+            </div>
+          </aside>
+          <aside class="widget" style="background-color: #4bbcd7">
+            <h3 class="widget__title">Category</h3>
+            <ul *ngFor="let a of service">
+              <li>
+                <a href="http://localhost:4200/details_service/{{a.id}}">{{a.name}}</a>
+                <hr class="hr0">
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="content">
+          <div class="introduction" *ngFor="let m of product">
+            <img src="assets/images/service/{{m.img}}"/>
+            <div >
+              <h3 class="name_service">{{m.name}}</h3>
+              <p>{{m.description}}</p>
+              <hr class="hr" style="width: 100%;margin: 0 0 60px">
+            </div>
+
+            <div class="blockquote">
+              <p class="blockquote_p">
+                "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete"
+                <br>
+                <cite style="color: #fafafa;font-size: 28px;padding-top: 20px">Morgan King</cite>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

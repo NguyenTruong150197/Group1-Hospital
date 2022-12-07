@@ -8,24 +8,9 @@
           </a>
           <hr>
           <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-              <a routerLink="" class="nav-link active" aria-current="page">
-                Equipment name 1
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                Equipment name 2
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                Equipment name 3
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                Equipment name 4
+            <li class="nav-item" *ngFor="let n of equipment">
+              <a class="nav-link active" aria-current="page">
+                {{n.name}}
               </a>
             </li>
           </ul>
@@ -34,34 +19,13 @@
       </div>
       <div class="col-9">
         <div class="content">
-          <div class="room-img">
-            <img src="assets/images/trong/equipment/e1.png">
-            <h4>Oxygen generator</h4>
+          <div class="room-img col-4" *ngFor="let a of equipment">
+            <img src="./assets/images/equipments/{{a.img}}">
+            <h3>{{a.name}}</h3>
             <p class="description">
-              Advantages and features
-              The machine has a large capacity of 5m3/h, equivalent to 83 liters/minute, suitable for use in clinics and hospitals
-              Modern design with 4 flexible moving rollers
-              Large capacity is very suitable for long-term treatment support
-              Simple to use operations
-              Easy to remove parts for cleaning
-              The device brings a comfortable and pleasant feeling to the user
-              Pure oxygen source, meeting the needs of many patients
-              Sturdy frame, made of high quality materials, long service life.
-              Specifications
-              Product model: 5m³/h
-              Size: 1860*750*1320mm
-              Weight: 250kg
-              Power requirements, power supply: 220 V / 50Hz (± 10%)
-              Power: 7.5KW
-              Oxygen flow: 5m³/h
-              Oxygen concentration: 93 ± 3% v/v)
-              Oxygen outlet pressure: 200-500Kpa 2bar.-5bar.
-              Noise 60dB
-              Basic function: oxygen conversion
-              Oxygen connection: DN8 . internal thread
-              Product features: Comes with an external air tank
-              Operating room size: 20㎡
+              {{a.function}}
             </p>
+            <hr class="hr" style="width: 100%;margin: 0 0 60px">
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-<section class="section main">
+<section class="section room-section">
   <div class="container div-2-container">
     <div class="row">
       <div class="col-3">
@@ -8,45 +8,28 @@
           </a>
           <hr>
           <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-              <a routerLink="./room-content" class="nav-link active" aria-current="page">
-                Room name 1
-              </a>
-            </li>
-            <li>
-              <a routerLink="./room-content" class="nav-link text-white">
-                Room name 2
-              </a>
-            </li>
-            <li>
-              <a routerLink="./room-content" class="nav-link text-white">
-                Room name 3
-              </a>
-            </li>
-            <li>
-              <a routerLink="./room-content" class="nav-link text-white">
-                Room name 4
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                Room name 5
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                Room name 6
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                Room name 7
+            <li class="nav-item" *ngFor="let n of room">
+              <a class="nav-link active" aria-current="page">
+                {{n.name}}
               </a>
             </li>
           </ul>
 
         </div>
       </div>
+
+      <div class="col-9">
+        <div class="content">
+          <div class="room-img" *ngFor="let a of room">
+            <h4 id="eq{{a.id}}">{{a.name}}</h4>
+            <p class="description">
+              {{a.function}}
+            </p>
+            <hr class="hr" style="width: 100%;margin: 0 0 60px">
+          </div>
+        </div>
+      </div>
+
       <div class="col-9">
         <router-outlet></router-outlet>
       </div>
