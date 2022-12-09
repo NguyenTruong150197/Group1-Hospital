@@ -32,6 +32,7 @@ import {DetailsComponent} from "../details/details.component";
 import {Details_serviceComponent} from "../details_service/details_service.component";
 import {FaqsComponent} from "./faqs/faqs.component";
 import {AppRoutingModule} from "./app-routing.module";
+import {AppointmentComponent} from "./appointment/appointment.component";
 const appRoutes: Routes=[
   {path:'',component: HomeComponent},
   {path:'doctors',component: DoctorsComponent},
@@ -88,6 +89,7 @@ const appRoutes: Routes=[
     DetailsComponent,
     Details_serviceComponent,
     FaqsComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -109,6 +111,7 @@ const appRoutes: Routes=[
       {path:'facilities',component: FacilitiesComponent},
       {path:'services',component: Services_1Component},
       {path:'infra',component: InfrastructureComponent},
+      {path:'appointment',component: AppointmentComponent},
     ])
   ],
   providers: [],
