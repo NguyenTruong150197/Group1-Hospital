@@ -44,21 +44,6 @@ top-left{
   font-size: 1.2rem;
 }
 
-.top{
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  background-color: white;
-  z-index: 1;
-}
-.navbar {
-  /*overflow: hidden;*/
-  /*background-color: #333;*/
-  position: fixed; /* Set the navbar to fixed position */
-  top: 24px; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  z-index: 1;
-}
 
 .space-home-logo{
   margin-left: 120px;
@@ -91,17 +76,56 @@ top-left{
   position: absolute;
   z-index: 10;              /*in nổi phần tử */
   left: 0;
+  transition: 1s;
+  color: white;
 }
-.navbar ul li:hover ul{
+
+.navbar ul li:hover ul {
   display: block;
+  transition: 1s !important;
+  color: white !important;
+}
+.navbar ul li:hover{
+  border-bottom: 2px solid #152858 !important;
+  color: white;
+}
+.navbar ul li ul li:hover{
+  border-bottom: none !important;
+  background-color: #3065b5 !important;
+  color: white !important;
+}
+.navbar ul li{
+  border-bottom: 2px solid #3065b5 !important;
+}
+.navbar ul li ul li{
+  border-bottom: none !important;
+}
+.navbar ul li ul li a:hover{
+  background-color: #3065b5 !important;
+  color: white !important;
+}
+/*.navbar-brand:hover{*/
+/*  transform: scale(1.001);*/
+/*  transition: 0.1s;*/
+/*}*/
+
+
+/*.main{*/
+/*  margin-top: 112px;*/
+/*}*/
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  transition: 0.2s linear;
+  top: 0px;
 }
 
-
-.main{
-  margin-top: 112px;
+.nofixed {
+  position: static;
+  transition: 0.2s linear;
+  top: -50px;
 }
-
-
 
 
 .foot{

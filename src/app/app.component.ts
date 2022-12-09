@@ -3,6 +3,8 @@ import {ICentre} from "./interfaces/centre.interface";
 import {HttpClient} from "@angular/common/http";
 import {IDoctor} from "./interfaces/doctor.interface";
 import {IService} from "./interfaces/service.interface";
+import {HostListener} from "@angular/core";
+
 
 @Component({
   selector: 'app-root',
@@ -27,6 +29,18 @@ export class AppComponent {
     this.http.get<IService[]>(url2).subscribe(data=>{
       this.service = data;
     })
+  };
+  navbarfixed:boolean = false;
+
+  @HostListener('window:scroll',['$event']) onscroll(){
+    if(window.scrollY > 100)
+    {
+      this.navbarfixed = true;
+    }
+    else
+    {
+      this.navbarfixed = false;
+    }
   }
 }
 
