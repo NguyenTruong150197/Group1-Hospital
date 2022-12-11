@@ -79,7 +79,9 @@ top-left{
   transition: 1s;
   color: white;
 }
-
+.navbar{
+  z-index: 10;
+}
 .navbar ul li:hover ul {
   display: block;
   transition: 1s !important;
