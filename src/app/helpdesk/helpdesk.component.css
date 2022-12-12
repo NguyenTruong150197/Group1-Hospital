@@ -33,3 +33,6 @@ h1{
 .hr1{
   color: white;
 }
+.nav-pills a:hover{
+  background-color: #15285890;
+}
